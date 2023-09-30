@@ -1,0 +1,48 @@
+<!DOCTYPE html5>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>littleblack111</title>
+        <link rel="stylesheet" href="/src/css/style.css">
+        <link rel="stylesheet" href="/src/css/login.css">
+    </head>
+    <body>
+        <!-- header -->
+        <header id="navBarHeader">
+            <nav class="navBar">
+                <div class="left">
+                    <a id="btnHome" href="/">home<span></span></span></a>
+                </div>
+                <div class="right">
+                    <a href="/pages/login/login.html" id="btnLogin" class="active">login</a>
+                    <a href="/" id="btnContact">contact</a>
+                </div>
+            </nav> 
+        </header>
+
+        <!-- index page -->
+        <section class="loginPage">
+            <div class="window">
+                <div class="placeholder" id="infos">
+                    <div class="text">
+                        <h1 class="title">login</h1>
+                        <object class="br"></object>
+                        <h2>username</h2>
+                        <input id="username" type="text">
+                        <h2>password</h2>
+                        <input id="password" type="password">
+                        <br><br>
+                        <button onclick="test()">login</button>
+                    </div>
+                </div>
+            </div>
+            <div style="position: flex;">    
+                <a href="/pages/login/register.html" style="position: absolute; bottom: 5px; color: #F4E8C1; background-color: #331E38;">
+                    or create a new account
+                </a>
+            </div>
+        </section>
+        <script src="/src/js/login.js"></script>
+    </body>
+</html>

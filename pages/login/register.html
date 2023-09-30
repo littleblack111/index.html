@@ -1,0 +1,45 @@
+<!DOCTYPE html5>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>littleblack111</title>
+        <link rel="stylesheet" href="/src/css/style.css">
+        <link rel="stylesheet" href="/src/css/register.css">
+    </head>
+    <body>
+        <!-- header -->
+        <header id="navBarHeader">
+            <nav class="navBar">
+                <div class="left">
+                    <a id="btnHome" href="/">home<span></span></span></a>
+                </div>
+                <div class="right">
+                    <a href="/pages/login/login.html" id="btnLogin" class="active">login</a>
+                    <a href="/" id="btnContact">contact</a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- index page -->
+        <section class="registerPage">
+            <div class="window">
+                <div class="placeholder" id="infos">
+                    <div class="text">
+                        <h1 class="title">create account</h1>
+                        <object class="br"></object>
+                        <h2>username</h2>
+                        <input id="username" type="text">
+                        <h2>password</h2>
+                        <input id="password" type="text">
+                        <h2>verify password</h2>
+                        <input id="verify-password" type="text">
+                        <br><br>
+                        <button onclick="createAccount()">create account</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="/src/js/register.js"></script>
+    </body>
+</html>

@@ -1,0 +1,109 @@
+:root {
+    --topBarHeight: 10%;
+}
+
+@font-face {
+    font-family: hacked;
+    src: url(/fonts/Hacked-KerX.ttf);
+}
+@font-face {
+    font-family: smooth;
+    src: url(/fonts/SmoothElegantRegular-ZLv3.ttf);
+}
+@font-face {
+    font-family: liga;
+    src: url(/fonts/LigaJetBrainsMonoNerdFont-Regular.ttf);
+}
+@font-face {
+    font-family: big;
+    src: url(/fonts/Big500-8MLOM.ttf);
+}
+ 
+/* page setup ============================================= */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: liga;
+}
+
+body {
+    top: 0;
+    left: 0;
+}
+
+/* topbar styles ========================================== */
+
+header {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3em;
+    justify-content: space-between;
+    align-items:center;
+    background: color(0, 0, 0, .1);
+    z-index: 1000;
+    background-color: #331E38;
+}
+
+.navBar a {
+    position: relative;
+    height: 100%;
+    font-size: 5mm;
+    text-transform: capitalize;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 5mm;
+    margin-right: 5mm;
+    padding-top: 3mm;
+    padding-bottom: 3mm;
+    color: #F4E8C1;
+}
+
+.navBar .left a {float: left;}
+.navBar .right a {float: right;}
+
+.navBar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1mm;
+    background: #F4E8C1;
+    border-radius: 1mm;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+
+.navBar a:hover::after {
+    transform: scaleX(1);
+}
+
+
+.navBar a.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1mm;
+    background: #F4E8C1;
+    border-radius: 1mm;
+    transform: scaleX(1);
+}
+
+/* other ================================================== */
+
+.contents {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    position: relative;
+}
