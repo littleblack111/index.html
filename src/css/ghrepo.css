@@ -89,6 +89,7 @@ img {
     box-shadow: 0 0px 6px var(--accent), 0 0px 6px var(--accent);
     max-width: 100%;
     height: auto;
+    box-shadow: 0 0 10mm rgba(0,0,0,.7);
 }
 
 a {
@@ -125,6 +126,7 @@ ul {
     font-size: 18px;
     padding: 2em;
     border-radius: 16px;
+    /* border: 0.1px solid var(--accent); */
 }
 
 .user-info figure {
@@ -165,6 +167,7 @@ input {
     padding: 1em;
     margin-bottom: 1em;
     border: 2px solid var(--accent);
+    box-shadow: 0 0 10mm rgba(0,0,0,.7);
     text-align: center;
 }
 
@@ -177,12 +180,16 @@ input {
     flex-wrap: wrap;
     justify-content: center;
     background: rgba(128, 128, 128, 0.2);
+    /* -webkit-backdrop-filter: blur(2px); */
+    /* backdrop-filter: blur(2px); */
     margin-top: 0;
     padding: 2em;
     /* border-bottom-left-radius: 20px; */
     /* border-bottom-right-radius: 20px; */
     border-radius: 16px;
+    /* border: 0.1px solid var(--accent); */
     margin-bottom: 4em;
+    /* box-shadow: 0 0 10mm rgba(0,0,0,.7); */
 }
 
 h3 {
@@ -200,7 +207,6 @@ h3 {
     align-items: flex-start;
     background: transparent;
     /* background: rgba(128, 128, 128, 0.2); */
-
 }
 
 .repo-list li {
@@ -214,7 +220,8 @@ h3 {
     background: transparent;
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
-    /* background: rgba(128, 128, 128, 0.3); */
+    /* box-shadow: 0 0 10mm rgba(0,0,0,.7); */
+    /* background: rgba(128, 128, 128, 0.1); */
 }
 
 .repo-list h3, span{
@@ -222,7 +229,7 @@ h3 {
 }
 
 .repo-list li:hover {
-    box-shadow: 0 3px 6px var(--accent), 0 3px 6px var(--accent);
+    /* box-shadow: 0 3px 6px var(--accent), 0 3px 6px var(--accent); */
     background: rgba(0, 0, 0, 0.5);
 }
 
@@ -249,9 +256,11 @@ h3 {
 }
 
 .user-info {
-  background: transparent;
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
+  /* background: transparent; */
+  background: rgba(128, 128, 128, 0.2);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  /* box-shadow: 0 0 10mm rgba(0,0,0,.7); */
 
 }
 
@@ -275,7 +284,7 @@ h3 {
 .repo {
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
-
+    box-shadow: 0 0 10mm rgba(0,0,0,.7);
 }
 
 .user-info * {
@@ -285,7 +294,6 @@ h3 {
 @media (max-width: 700px) {
     .user-info div p {
         margin: 10px;
-        
     }
 }
 
