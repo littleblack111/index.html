@@ -43,7 +43,7 @@ header {
     height: 3em;
     justify-content: space-between;
     align-items:center;
-    background: color(0, 0, 0, .1);
+    /* background: color(0, 0, 0, .1); */
     z-index: 1000;
     background-color: #331E38;
 }
@@ -82,6 +82,9 @@ header {
     transform: scaleX(1);
 }
 
+.navBar a:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
 
 .navBar a.active::after {
     content: '';
