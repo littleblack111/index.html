@@ -46,11 +46,16 @@
     position: relative;
     width: 100%;
     text-align: center;
+    text-shadow: 10px 10px 10px black;
 }
 
 .window .placeholder .text .title {
     font-family: smooth;
     font-size: 12.5vw;
+}
+
+.title {
+  text-shadow: 15px 15px 15px black;
 }
 
 .window .placeholder .text .br {

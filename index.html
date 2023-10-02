@@ -1,6 +1,6 @@
 <!DOCTYPE html5>
 <html lang="en">
-<script src="/src/js/includehtml.js"></script>
+<script src="/src/js/includeheader.js"></script>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,23 +10,25 @@
     </head>
     <body>
         <!-- headers -->
-        <div include-html="/src/html/headers.html"></div>
-        <script>includeHTML();</script>
+        <div include-header="/src/html/headers.html"></div>
+        <script>includeHeader();</script>
 
         <!-- index page -->
-        <section class="indexPage">
-            <div class="window">
-                <div class="placeholder" id="infos">
-                    <div class="text">
-                        <h2>Hello! This is</h2>
-                        <object class="br"></object>
-                        <h1 class="title">littleblack111</h1>
-                        <object class="br"></object>
-                        <h2>welcome to my <br> website!</h2>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div class="wrapper">
+          <section class="indexPage">
+              <div class="window slowScroll">
+                  <div class="placeholder" id="infos">
+                      <div class="text fastScroll">
+                          <h2>Hello! This is</h2>
+                          <object class="br"></object>
+                          <h1 class="title">littleblack111</h1>
+                          <object class="br"></object>
+                          <h2>welcome to my <br> website!</h2>
+                      </div>
+                  </div>
+              </div>
+          </section>
+        </div>
 
         <script src="/src/js/index.js"></script>
     </body>

@@ -26,6 +26,7 @@
     padding: 0;
     margin: 0;
     font-family: liga;
+    text-shadow: 0px 0px 1px black;
 }
 
 body {
@@ -109,4 +110,28 @@ header {
 
 section {
     position: relative;
+}
+
+.wrapper {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+}
+
+.slowScroll
+  transform: translateZ(-10px) scale(2);
+}
+
+.fastScroll {
+  transform: translateZ(-5px) scale(1.5);
+}
+
+.slowScroll,
+.fastScroll {
+  position: absolute;
+  /* height: 100%; */
+  /* width: 100%; */
+  object-fit: cover;
+  z-index: -1;
 }

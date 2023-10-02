@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<script src="/src/js/includehtml.js"></script>
+<script src="/src/js/includeheader.js"></script>
 
 <head>
     <meta charset="UTF-8" />
@@ -15,8 +15,11 @@
 </head>
 
 <body>
-    <div include-html="/src/html/headers.html"></div>
-    <script>includeHTML();</script>
+    <!-- headers -->
+    <div include-header="/src/html/headers.html"></div>
+    <script>includeHeader();</script>
+
+    <!-- main Github Functions -->
     <main class="container">
         <h1>All Of My Projects</h1>
         <section class="intro">
