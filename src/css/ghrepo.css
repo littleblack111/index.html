@@ -104,6 +104,7 @@ a {
 a:hover {
     /* color: var(--text); */
     background: rgba(0, 0, 0, 0.1);
+    transition: background 0.5s
 }
 
 .github-img {
@@ -176,6 +177,7 @@ input {
 
 .filter-repos:hover {
   background: rgba(10, 10, 15, 0.5);
+  transition: background 0.5s
 }
 
 .repos {
@@ -234,6 +236,7 @@ h3 {
 .repo-list li:hover {
     /* box-shadow: 0 3px 6px var(--accent), 0 3px 6px var(--accent); */
     background: rgba(0, 0, 0, 0.5);
+    transition: background 0.5s
 }
 
 .link-btn {
@@ -250,6 +253,7 @@ h3 {
     background: rgba(22, 136, 240, 0.5);
     border: 2px solid var(--text);
     transform: scale(1.1);
+    transition: background 0.5s, transform 0.3s, border 0.5s;
 }
 
 .repo-list p {
