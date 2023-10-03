@@ -1,0 +1,3 @@
+target does not exist --- pages/info/about.html --> /images/self.jpg
+target does not exist --- pages/repo/github/repos.html --> images/favicon.png
+missing doctype --- src/html/headers.html --> <nil>
