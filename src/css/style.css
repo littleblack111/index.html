@@ -97,6 +97,10 @@ body {
 }
 
 /* transition */
+* {
+  transition: all 0.3s; 
+}
+
 *:hover {
   transition: all 0.3s
 }
@@ -117,7 +121,7 @@ header {
     align-items:center;
     /* background: color(0, 0, 0, .1); */
     z-index: 1000;
-    background-color: #331E38;
+    background: rgba(128, 128, 128, 0.2)
 }
 
 .navBar a {
@@ -144,19 +148,21 @@ header {
     bottom: 0;
     width: 100%;
     height: 1mm;
-    background: #F4E8C1;
+    background: rgba(128, 128, 128, 0.2);
     border-radius: 1mm;
     transform: scaleX(0);
-    transition: transform 0.3s;
+    transition: all 0.3s;
 }
 
 .navBar a:hover::after {
-    transform: scaleX(1);
+    transform: scaleX(1.1);
 }
 
 .navBar a:hover {
   background: rgba(255, 255, 255, 0.2);
-  transition: background 1s
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  transition: all 1s
 }
 
 .navBar a.active::after {
@@ -169,6 +175,19 @@ header {
     background: #F4E8C1;
     border-radius: 1mm;
     transform: scaleX(1);
+}
+
+.navBar:active,
+.navBar:hover,
+header:active,
+header:hover,
+#navBarHeader:hover,
+#navBarHeader:active
+{
+  transform: scale(1.005);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  transition: all 0.5s
 }
 
 /* other ================================================== */

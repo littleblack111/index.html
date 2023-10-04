@@ -21,7 +21,6 @@
 
     <!-- main Github Functions -->
     <main class="container tilt">
-        <h1>All Of My Projects</h1>
         <section class="intro">
             <div class="user-info animate animation--fast slideInTop"></div>
         </section>
@@ -32,7 +31,8 @@
 
         <section class="repos">
             <input type="text" class="filter-repos animate animate--slow slideInTop hide" placeholder="Search Projects" />
-            <ul class="repo-list animate slideInTop tilt"></ul>
+            <div class="loader"></div>
+            <ul class="repo-list animate slideInTop tilt", id="repo-list"></ul>
         </section>
     </main>
     <script src="/src/js/tilt.js" />

@@ -44,6 +44,12 @@
     text-align: center;
 }
 
+.window:hover,
+.placeholder:hover {
+  transform: scale(1.1);
+  transition: all 0.3s
+}
+
 .window .placeholder .text {
     position: relative;
     width: 100%;
@@ -60,6 +66,12 @@
 
 .title {
   text-shadow: 15px 15px 15px black;
+  transition: all 0.5s
+}
+
+.title:hover {
+  transform: scale(1.1);
+  transition: all 0.5s
 }
 
 .window .placeholder .text .br {
