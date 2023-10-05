@@ -192,4 +192,5 @@ const devicons = {
     TypeScript: '<i class="devicon-typescript-plain colored"></i> TypeScript',
     'Vim Script': '<i class="devicon-vim-plain colored"></i> Vim Script',
     Vue: '<i class="devicon-vuejs-plain colored"></i> Vue',
+    Mail: '<i class="nf nf-cod-mail"></i>',
 };
