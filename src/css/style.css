@@ -108,6 +108,7 @@ body {
 
 .js-tilt-glare {
   border-radius: 18px;
+  overflow: hidden;
 }
 
 /* topbar styles ========================================== */

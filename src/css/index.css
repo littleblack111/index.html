@@ -1,3 +1,6 @@
+/* :root { */
+/*   --primary-color: mediumslateblue; */
+/* } */
 .wrapper {
     height: 100vh;
     width: 100%;
@@ -41,6 +44,29 @@
     /* transform-style: preserve-3d; */
     /* perspective: 1000px; */
 }
+
+/* .window:after { */
+/*   content: ""; */
+/*   height: 70px; */
+/*   width: 1px;   */
+/*   position: absolute;   */
+/*   left: -1px; */
+/*   top: 65%; */
+/*   transition: top, opacity; */
+/*   transition-duration: 600ms; */
+/*   transition-timing-function: ease; */
+/*   background: linear-gradient( */
+/*     transparent, */
+/*     var(--primary-color), */
+/*     transparent */
+/*   ); */
+/*   opacity: 0; */
+/* } */
+
+/* .window:hover:after { */
+/*   top: 25%; */
+/*   opacity: 1; */
+/* } */
 
 .window .windowWrap {
     position: relative;
