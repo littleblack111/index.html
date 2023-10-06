@@ -34,6 +34,7 @@ body {
     margin: 0;
     margin-top: (3em);
     font-family: 'Open Sans', sans-serif;
+    background-color: rgb(0, 0, 255);
     background-image: url(/images/heigh-grass.jpg);
     background-position: center;
     background-repeat: no-repeat;
