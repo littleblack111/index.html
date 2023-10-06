@@ -28,7 +28,7 @@ const displayProfile = (profile) => {
     const userInfo = document.querySelector('.user-info');
     userInfo.innerHTML = `
         <figure>
-            <a href=${profile.html_url}><img alt="user avatar" src=${profile.avatar_url} /></a>
+            <a href=${profile.html_url}><img alt="user avatar" src=${profile.avatar_url}></a>
         </figure>
         <div>
             <!-- <h2><a href=${profile.blog}><strong>${profile.name}</strong></a></h2> -->
