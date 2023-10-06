@@ -41,5 +41,5 @@ document.addEventListener("DOMContentLoaded", () => {
     intervals.forEach((interval) => clearInterval(interval)); // Clear existing intervals
     intervals = []; // Reset intervals array
     hackType(); // Call hackType again
-  }, 15000); // Repeat every 5 seconds
+  }, 10000); // Repeat every 5 seconds
 });
