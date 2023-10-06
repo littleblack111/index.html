@@ -1,5 +1,5 @@
+target does not exist --- index.html --> ./index.js
 alt attribute missing --- index.html --> 
 src attribute missing --- index.html --> 
 target does not exist --- pages/info/about.html --> /images/self.jpg
-target does not exist --- pages/repo/github/repos.html --> images/favicon.png
 missing doctype --- src/html/headers.html --> <nil>

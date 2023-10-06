@@ -1,3 +1,9 @@
+let header = document.querySelector('[header]');
+let newElement = document.createElement('div');
+let page = header.getAttribute('page');
+
+console.log(page);
+newElement.innerHTML = `
 <!-- header -->
 <header id="navBarHeader">
     <nav class="navBar">
@@ -10,3 +16,7 @@
         </div>
     </nav> 
 </header>
+`;
+
+header.appendChild(newElement);
+document.getElementById("btn"+page).setAttribute('class', 'active');
