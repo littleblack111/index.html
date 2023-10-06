@@ -165,10 +165,12 @@ body {
 }
 
 .animate.zoomIn {
+  transition-timing-function: linear;
   animation-name: zoomIn;
 }
 
 .animate.zoomOut {
+  transition-timing-function: linear;
   animation-name: zoomOut;
 }
 
