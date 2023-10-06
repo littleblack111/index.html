@@ -2,7 +2,7 @@ let header = document.querySelector('[header]');
 let newElement = document.createElement('div');
 let page = header.getAttribute('page');
 
-console.log(page);
+// console.log(page);
 newElement.innerHTML = `
 <!-- header -->
 <header id="navBarHeader">
