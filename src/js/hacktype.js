@@ -29,8 +29,8 @@ document.addEventListener("DOMContentLoaded", () => {
             clearInterval(intervals.shift());
           }
 
-          iteration += 1 / 3;
-        }, 30)
+          iteration += 1 / 5;
+        }, 20)
       );
     });
   }
