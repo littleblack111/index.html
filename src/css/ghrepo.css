@@ -199,13 +199,9 @@ input:hover,
 
 input:active,
 .filter-repos:active {
-  background: #F4E8C1;
+  /* background: #F4E8C1; */
   box-shadow: 0 0 10mm rgba(0,0,0,.7);
-}
-
-input:active,
-.filter-repos:active {
-  background: rgba(244, 232, 193, 0.5);
+  background: rgba(244, 232, 193, 0.3);
 }
 
 .repos {
