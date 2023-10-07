@@ -75,7 +75,10 @@
     height: 100%;
     border: 1px solid rgba(255,255,255, .15);
     border-radius: 1em;
-    -webkit-backdrop-filter: blur(16px);
+    -moz-filter: blur(16px);
+    -o-filter: blur(16px);
+    -ms-filter: blur(16px);
+     -webkit-backdrop-filter: blur(16px);
     backdrop-filter: blur(16px);
     box-shadow: 0 0 10mm rgba(0,0,0,1);
     display: flex;
