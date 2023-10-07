@@ -190,7 +190,10 @@ input:hover,
 .filter-repos:hover {
   /* background: rgba(10, 10, 15, 0.5); */
   transition: all 0.5s;
-  -webkit-backdrop-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   box-shadow: 0 0 50mm rgba(0,0,0,.7);
   transform: scale(1.1);
@@ -209,8 +212,11 @@ input:active,
     flex-wrap: wrap;
     justify-content: center;
     background: rgba(128, 128, 128, 0.2);
-    /* -webkit-backdrop-filter: blur(2px); */
-    /* backdrop-filter: blur(2px); */
+    /* backdrop-filter:     -webkit-filter: blur(32px);
+    -moz-filter: blur(32px);
+    -o-filter: blur(32px);
+    -ms-filter: blur(32px);
+    blur(2px); */
     margin-top: 0;
     padding: 2em;
     /* border-bottom-left-radius: 20px; */
@@ -254,6 +260,10 @@ h3 {
     padding: 1em;
     text-align: center;
     background: transparent;
+    -webkit-filter: blur(20px);
+    -moz-filter: blur(20px);
+    -o-filter: blur(20px);
+    -ms-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     -webkit-transition: all 0.5s
@@ -302,6 +312,10 @@ h3 {
 
 .intro:hover,
 .user-info:hover {
+  -webkit-filter: blur(8px);
+  -moz-filter: blur(8px);
+  -o-filter: blur(8px);
+  -ms-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   transform: scale(1.1);
@@ -311,6 +325,10 @@ h3 {
 .user-info {
   /* background: transparent; */
   background: rgba(128, 128, 128, 0.2);
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
   /* box-shadow: 0 0 10mm rgba(0,0,0,.7); */
@@ -334,6 +352,10 @@ h3 {
 }
 
 .repo {
+    -webkit-filter: blur(20px);
+    -moz-filter: blur(20px);
+    -o-filter: blur(20px);
+    -ms-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     box-shadow: 0 0 10mm rgba(0,0,0,.7);

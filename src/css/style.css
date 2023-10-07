@@ -34,6 +34,10 @@ body {
     left: 0;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 /* animation ============================================== */
 
 @keyframes slideInTop {
@@ -84,6 +88,8 @@ body {
     -moz-filter: blur(32px);
     -o-filter: blur(32px);
     -ms-filter: blur(32px);
+    -webkit-backdrop-filter: blur(32px);
+    backdrop-filter: blur(32px);
     transform: scale(2);
   }
   100% {
@@ -91,6 +97,8 @@ body {
     -moz-filter: blur(0px);
     -o-filter: blur(0px);
     -ms-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    backdrop-filter: blur(0px);
     transform: scale(1);
   }
 }
@@ -218,6 +226,10 @@ header {
 .navBar a:hover {
   /* background: rgba(255, 255, 255, 0.2); */
   /* outline: ridge rgba(128, 128, 128, .6); */
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   transition: all 1s
@@ -243,9 +255,13 @@ header:hover,
 #navBarHeader:active
 {
   transform: scale(1.005);
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
-  transition: all 0.5s
+transition: all 0.5s
 }
 
 /* other ================================================== */
