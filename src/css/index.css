@@ -106,9 +106,17 @@
 .window .windowWrap .text .title {
     /* z-index: -1; */
     /* transform: translateZ(30px); */
-    font-family: smooth;
-    font-size: 12.5vw;
+    font-family: monoton;
+    font-size: 7vw;
+    text-transform: uppercase
 }
+
+.dis {
+    /* z-index: -1; */
+    /* transform: translateZ(30px); */
+    font-family: rocksalt;
+}
+
 
 .title {
   text-shadow: 15px 15px 15px black;

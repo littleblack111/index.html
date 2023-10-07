@@ -19,6 +19,15 @@
     src: url(/fonts/Big500-8MLOM.ttf);
 }
  
+@font-face {
+    font-family: monoton;
+    src: url(/fonts/monoton.ttf);
+}
+
+@font-face {
+    font-family: rocksalt;
+    src: url(/fonts/RockSalt-Regular.ttf);
+}
 /* page setup ============================================= */
 
 * {

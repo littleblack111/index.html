@@ -222,11 +222,6 @@ input:active,
     flex-wrap: wrap;
     justify-content: center;
     background: rgba(128, 128, 128, 0.2);
-    -moz-filter: blur(32px);
-    -o-filter: blur(32px);
-    -ms-filter: blur(32px);
-    -webkit-backdrop-filter: blur(32px);
-    backdrop-filter: blur(32px);
     margin-top: 0;
     padding: 2em;
     /* border-bottom-left-radius: 20px; */
