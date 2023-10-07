@@ -111,10 +111,11 @@
     text-transform: uppercase
 }
 
-.dis {
+.discription {
     /* z-index: -1; */
     /* transform: translateZ(30px); */
     font-family: rocksalt;
+    font-size: 1.5vw;
 }
 
 
