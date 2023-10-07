@@ -58,7 +58,7 @@ body {
 }
 
 @keyframes zoomIn {
-  1% {
+  0% {
     transform: scale(0.01);
   }
   85% {
@@ -70,11 +70,28 @@ body {
 }
 
 @keyframes zoomOut {
-  1% {
+  0% {
     transform: scale(1);
   }
   100% {
     transform: scale(0.01);
+  }
+}
+
+@keyframes reveal {
+  0% {
+    -webkit-filter: blur(32px);
+    -moz-filter: blur(32px);
+    -o-filter: blur(32px);
+    -ms-filter: blur(32px);
+    transform: scale(2);
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+    transform: scale(1);
   }
 }
 
@@ -127,6 +144,11 @@ body {
 .animate.zoomOut {
   transition-timing-function: linear;
   animation-name: zoomOut;
+}
+
+.animate.reveal {
+  transition-timing-function: linear;
+  animation-name: reveal;
 }
 
 /* transition */
