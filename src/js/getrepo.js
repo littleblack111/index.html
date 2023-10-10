@@ -194,3 +194,4 @@ const devicons = {
     Vue: '<i class="devicon-vuejs-plain colored"></i> Vue',
     Mail: '<i class="nf nf-cod-mail"></i>',
 };
+
