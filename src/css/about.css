@@ -2,8 +2,60 @@
 /*    */
 /* } */
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.left {
+    width: 50%;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    /* background-color: #f1f1f1; */
+}
+
+.left img {
+    max-width: 100%;
+    height: auto;
+}
+
+.right {
+    flex: 1;
+    padding: 20px;
+}
+
+.info {
+    margin-bottom: 20px;
+}
+
+.info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.info p {
+    font-size: 16px;
+    margin: 0;
+}
+
+
 .name {
   font-family: smooth;
   font-size: 5vw;
 
+}
+
+.background {
+    width: 100%;
+  height: 100vh;
 }

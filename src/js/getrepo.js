@@ -32,7 +32,7 @@ const displayProfile = (profile) => {
         </figure>
         <div>
             <!-- <h2><a href=${profile.blog}><strong>${profile.name}</strong></a></h2> -->
-            <h2><a href=/><strong>${profile.name}</strong></a></h2>
+            <h2><a href=/><strong class="usertitle">${profile.name}</strong></a></h2>
             <!-- <h2><a href=${profile.html_url}><strong>${profile.name}</strong></a></h2> -->
             <p>${profile.bio}</p>
             <p>
@@ -89,7 +89,7 @@ const displayRepos = (repos) => {
         let listItem = document.createElement('li');
         listItem.classList.add('repo');
         listItem.innerHTML = `
-            <h3>${repo.name}</h3>
+            <h2 class="repo-title">${repo.name}</h2>
             <span>${repo.description ? `<span>${repo.description}</span>` : ''}<br/><br/>`
 
         if (repo.stargazers_count > 0) {

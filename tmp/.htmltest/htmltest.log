@@ -1,5 +1,1 @@
-target does not exist --- index.html --> ./index.js
-alt attribute missing --- index.html --> 
-src attribute missing --- index.html --> 
 target does not exist --- pages/info/about.html --> /images/self.jpg
-missing doctype --- src/html/headers.html --> <nil>

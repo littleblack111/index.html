@@ -28,6 +28,11 @@
     font-family: rocksalt;
     src: url(/fonts/RockSalt-Regular.ttf);
 }
+
+@font-face {
+  font-family: audiowide;
+  src: url(/fonts/audiowide.ttf);
+}
 /* page setup ============================================= */
 
 * {
@@ -101,8 +106,16 @@ body::-webkit-scrollbar {
     backdrop-filter: blur(32px);
     transform: scale(2);
   }
+
 }
 
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(.5deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-.5deg); }
+  100% { transform: rotate(0deg); }
+}
 /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 
 
@@ -135,6 +148,8 @@ body::-webkit-scrollbar {
   animation-duration: 1s;
 }
 
+/* real utility classes */
+
 .animate.slideInTop {
   animation-name: slideInTop;
   animation-timing-function: ease-in;
@@ -159,14 +174,15 @@ body::-webkit-scrollbar {
   animation-name: reveal;
 }
 
+.animate.shake {
+  animation-name: shake
+}
+
 /* transition */
 * {
   transition: all 0.3s; 
 }
 
-*:hover {
-  transition: all 0.3s
-}
 
 .js-tilt-glare {
   border-radius: 18px;
@@ -176,7 +192,7 @@ body::-webkit-scrollbar {
 /* topbar styles ========================================== */
 
 header {
-    position:fixed;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -203,8 +219,8 @@ header {
     color: #F4E8C1;
 }
 
-.navBar .left a {float: left;}
-.navBar .right a {float: right;}
+.navBar .hleft a {float: left;}
+.navBar .hright a {float: right;}
 
 .navBar a::after {
     content: '';
@@ -282,19 +298,25 @@ section {
   perspective: 10px;
 }
 
-.slowScroll
-  transform: translateZ(-10px) scale(2);
-}
-
-.fastScroll {
-  transform: translateZ(-5px) scale(1.5);
-}
-
-.slowScroll,
-.fastScroll {
-  position: absolute;
-  /* height: 100%; */
-  /* width: 100%; */
-  object-fit: cover;
-  z-index: -1;
+a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    -webkit-text-decoration-line: underline;
+    cursor: pointer;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .15s;
+    text-underline-offset: 1px;
+    transition: all .5s;
+    position: relative;
+    height: 100%;
+    font-size: 5mm;
+    text-transform: capitalize;
+    text-align: center;
+    margin-left: 5mm;
+    margin-right: 5mm;
+    padding-top: 3mm;
+    padding-bottom: 3mm;
+    /* border-radius: 8px; */
+    /* color: #F4E8C1; */
 }
