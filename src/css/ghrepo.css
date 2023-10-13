@@ -15,6 +15,12 @@
     --bg-main: #000;
     --bg-repo: #0f0f1a;
     --bg-user: #0a0a0f;
+    --purple: rgb(123, 31, 162);
+    --violet: rgb(103, 58, 183);
+    --pink: rgb(244, 143, 177);
+    --light-yellow: rgb(255, 255, 204);
+    --pale-yellow: rgb(255, 255, 153);
+    --lemon-yellow: rgb(255, 250, 205);
     }
 /* } */
 
@@ -288,7 +294,7 @@ input:active,
     transition: background 0.5s, transform 1s, all 0.3s
 }
 
-.repo-list:hover li:not(:hover) {
+.repo-list:hover:has(li:hover) li:not(:hover) {
     /* background: rgba(0, 0, 0, 0.3); */
     background: rgba(0, 0, 0, 0.3);
     transform: scale(0.95);
@@ -382,6 +388,20 @@ input:active,
 
 .rdescription:hover {
   -webkit-line-clamp: unset;
+}
+
+.rdescriptiontext:hover {
+  /* animation: background-pan 3s linear infinite; */
+  /* background: linear-gradient( */
+  /*   to right, */
+  /*   var(--purple), */
+  /*   var(--violet), */
+  /*   var(--pink), */
+  /*   var(--purple) */
+  /* ); */
+  /* background-size: 200%; */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
 }
 
 .user-info * {
