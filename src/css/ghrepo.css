@@ -361,6 +361,7 @@ input:active,
     backdrop-filter: blur(20px);
     box-shadow: 0 0 10mm rgba(0,0,0,.7);
     overflow: auto;
+    overflow-x: hidden;
     resize: both;
 }
 
