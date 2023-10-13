@@ -104,18 +104,6 @@ h2 {
     margin: 0;
 }
 
-img {
-    border: 2px solid var(--accent);
-    box-shadow: 0 0px 6px var(--accent), 0 0px 6px var(--accent);
-    max-width: 100%;
-    height: auto;
-    box-shadow: 0 0 10mm rgba(0,0,0,.7);
-}
-
-img:hover {
-  transform: scale(1.1);
-}
-
 a {
     background: transparent;
     color: var(--accent);
@@ -131,6 +119,10 @@ a {
 ul {
     list-style: none;
     padding: 0;
+}
+
+.user-info * {
+  background: transparent;
 }
 
 .user-info {
@@ -156,7 +148,17 @@ ul {
 }
 
 .user-info img {
+    border: 2px solid var(--accent);
+    box-shadow: 0 0px 6px var(--accent), 0 0px 6px var(--accent);
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 0 10mm rgba(0,0,0,.7);
     border-radius: 100%;
+}
+
+.user-info img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 100mm rgba(255, 238, 16,.7);
 }
 
 .user-info div {
@@ -287,8 +289,9 @@ input:active,
   background: transparent;
 }
 
-.repo-list li:hover {
+.repo:hover {
     /* box-shadow: 0 3px 6px var(--accent), 0 3px 6px var(--accent); */
+    box-shadow: 0 0 50mm rgba(255, 238, 16,.7);
     background: rgba(0, 0, 0, 0.5);
     transform: scale(1.05);
     transition: background 0.5s, transform 1s, all 0.3s
@@ -319,6 +322,7 @@ input:active,
     border: 2px solid var(--text);
     transform: scale(1.1);
     transition: background 0.5s, transform 0.5s, border 0.5s, all 0.5s;
+    box-shadow: 0 0 50mm rgba(0, 156, 255,.7);
 }
 
 .repo-list p {
@@ -349,27 +353,6 @@ input:active,
   /* box-shadow: 0 0 10mm rgba(0,0,0,.7); */
 }
 
-@media (min-width: 700px) {
-    .user-info div {
-        width: 45%;
-        text-align: left;
-        /* background: rgba(10, 10, 15, 0.1); */
-        background: transparent;
-    }
-
-    .repo-list {
-        justify-content: space-around;
-    }
-
-    .repo-list li {
-        width: 48%;
-        margin-right: 1.5%;
-        margin-left: 1.5%;
-        margin-top: 2%;
-        margin-bottom: 2%;
-    }
-}
-
 .repo {
     -moz-filter: blur(20px);
     -o-filter: blur(20px);
@@ -377,6 +360,8 @@ input:active,
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     box-shadow: 0 0 10mm rgba(0,0,0,.7);
+    overflow: auto;
+    resize: both;
 }
 
 .rdescription {
@@ -404,13 +389,29 @@ input:active,
   /* -webkit-text-fill-color: transparent; */
 }
 
-.user-info * {
-  background: transparent;
-}
 
-@media (max-width: 700px) {
+@media (min-width: 700px) {
+    .user-info div {
+        width: 45%;
+        text-align: left;
+        /* background: rgba(10, 10, 15, 0.1); */
+        background: transparent;
+    }
+
     .user-info div p {
         margin: 10px;
+    }
+
+    .repo-list {
+        justify-content: space-around;
+    }
+
+    .repo-list li {
+        width: 48%;
+        margin-right: 1.5%;
+        margin-left: 1.5%;
+        margin-top: 2%;
+        margin-bottom: 2%;
     }
 }
 

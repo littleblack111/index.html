@@ -90,7 +90,7 @@ const displayRepos = (repos) => {
         listItem.classList.add('repo');
         listItem.innerHTML = `
             <h2 class="repo-title">${repo.name}</h2>
-            <span class="rdescription">${repo.description ? `<span>${repo.description}</span>` : ''}<br/><br/>`
+            <span class="rdescription">${repo.description ? `<span class="rdescriptiontext">${repo.description}</span>` : ''}<br/><br/>`
 
         if (repo.stargazers_count > 0) {
             listItem.innerHTML += `<a href="${starsUrl}">
