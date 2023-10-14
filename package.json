@@ -11,6 +11,9 @@
   "author": "littleblack111",
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.2",
+    "@babel/preset-env": "^7.23.2",
     "autoprefixer": "^10.4.16",
     "cssnano": "^6.0.1",
     "g": "^2.0.1",
