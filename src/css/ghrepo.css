@@ -302,7 +302,7 @@ input:active,
     background: rgba(0, 0, 0, 0.3);
     transform: scale(0.95);
     animation-duration: 0.5s;
-    transition: background 0.5s, transform: 1s, all 0.3s;
+    transition: background 0.5s, transform 1s, all 0.3s
 }
 
 
