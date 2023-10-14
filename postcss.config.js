@@ -8,6 +8,8 @@ const postcssPseudoelements = require('postcss-pseudoelements')
 const postcssVmin = require('postcss-vmin')
 const pixrem = require('pixrem')
 const doiuse = require('doiuse')
+const postcssFixes = require('postcss-fixes')
+const rucksackCss = require('rucksack-css')
 
 module.exports = {
     plugins: [
@@ -21,5 +23,7 @@ module.exports = {
       postcssPseudoelements(),
       postcssVmin(),
       doiuse(),
+      postcssFixes(),
+      rucksackCss(),
     ],
 };
