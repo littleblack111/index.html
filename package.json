@@ -1,0 +1,20 @@
+{
+  "name": "index.html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "postcss src/css/* --dir dest",
+    "watch:css": "postcss src/css/* --dir dest"
+  },
+  "keywords": [],
+  "author": "littleblack111",
+  "license": "ISC",
+  "devDependencies": {
+    "cssnano": "^6.0.1",
+    "g": "^2.0.1",
+    "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0",
+    "postcss-preset-env": "^9.2.0"
+  }
+}
