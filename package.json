@@ -5,16 +5,23 @@
   "main": "index.js",
   "scripts": {
     "build:css": "postcss src/css/* --dir dest",
-    "watch:css": "postcss src/css/* --dir dest"
+    "watch:css": "postcss src/css/* --dir dest --watch"
   },
   "keywords": [],
   "author": "littleblack111",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.4.16",
     "cssnano": "^6.0.1",
     "g": "^2.0.1",
+    "pixrem": "^5.0.0",
     "postcss": "^8.4.31",
     "postcss-cli": "^10.1.0",
-    "postcss-preset-env": "^9.2.0"
+    "postcss-color-rgba-fallback": "^4.0.0",
+    "postcss-opacity": "^5.0.0",
+    "postcss-preset-env": "^9.2.0",
+    "postcss-pseudoelements": "^5.0.0",
+    "postcss-vmin": "^3.0.0",
+    "postcss-will-change": "^4.0.1"
   }
 }
