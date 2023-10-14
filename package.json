@@ -7,6 +7,7 @@
     "build:css": "postcss src/css/* --dir dest/css",
     "watch:css": "postcss src/css/* --dir dest/css --watch",
     "build:js": "babel src/js/* --out-dir dest/js",
+    "watch:js": "babel src/js/* --out-dir dest/js --watch",
     "dev": "./launch.sh",
     "check": "./launch.sh check"
   },
