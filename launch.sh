@@ -9,12 +9,12 @@ function check() {
 
 function buildcss() {
   printf '\033[0;35mCode CSS Build Starts...\033[0m\n'
-  npm run build:css || printf '\033[0;31mCode CSS Build Failed...\033[0m\n'
+  yarn build:css || printf '\033[0;31mCode CSS Build Failed...\033[0m\n'
 }
 
 function buildjs() {
   printf '\033[0;35mCode JavaScript Compile Starts...\033[0m\n'
-  npm run build:js || printf '\033[0;31mCode JavaScript Compile Failed...\033[0m\n'
+  yarn build:js || printf '\033[0;31mCode JavaScript Compile Failed...\033[0m\n'
 }
 
 function start() {
