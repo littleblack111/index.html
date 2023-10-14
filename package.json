@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:css": "postcss src/css/* --dir dest",
-    "watch:css": "postcss src/css/* --dir dest --watch"
+    "build:css": "postcss src/css/* --dir dest/css",
+    "watch:css": "postcss src/css/* --dir dest/css --watch",
+    "build:js": "babel src/js/* --out-dir dest/js"
   },
   "keywords": [],
   "author": "littleblack111",
