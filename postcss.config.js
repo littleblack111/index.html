@@ -13,9 +13,7 @@ const rucksackCss = require('rucksack-css')
 
 module.exports = {
     plugins: [
-      cssnano({
-          preset: 'default',
-      }),
+      cssnano({ preset: 'default' }),
       postcssPresetEnv(),
       postcssWillChange(),
       autoprefixer(),
