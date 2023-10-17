@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:css": "postcss dest/css/* --dir dest/css",
-    "watch:css": "postcss dest/css/* --dir dest/css --watch",
-    "build:js": "babel dest/js/* --out-dir dest/js",
-    "watch:js": "babel dest/js/* --out-dir dest/js --watch",
-    "build": "yarn build:css && yarn build:js",
+    "build:css": "postcss src/css/* --dir dest/css",
+    "watch:css": "postcss src/css/* --dir dest/css --watch",
+    "build:js": "babel src/js/* --out-dir dest/js",
+    "watch:js": "babel src/js/* --out-dir dest/js --watch",
+    "build": "yarn build:css & yarn build:js",
     "watch": "yarn watch:css & yarn watch:js",
     "dev": "./launch.sh",
     "check": "./launch.sh check"
