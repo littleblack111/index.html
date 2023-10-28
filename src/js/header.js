@@ -6,15 +6,15 @@ let page = header.getAttribute('page');
 newElement.innerHTML = `
 <!-- header -->
 <header id="navBarHeader">
-    <nav class="navBar">
-        <div class="hleft">
-            <a id="btnHome" style="text-decoration: unset" href="/">Home<span></span></span></a>
-        </div>
-        <div class="hright">
-            <a href="/pages/repo/github/repos.html" id="btnGhRepo" style="text-decoration: unset">Github Repos</a>
-            <a href="/pages/info/about.html" id="btnAbout" style="text-decoration: unset">About</a>
-        </div>
-    </nav> 
+	<nav class="navBar">
+		<div class="hleft">
+			<a id="btnHome" style="text-decoration: unset" href="/">Home<span></span></span></a>
+		</div>
+		<div class="hright">
+			<a href="/pages/repo/github/repos.html" id="btnGhRepo" style="text-decoration: unset">Github Repos</a>
+			<a href="/pages/info/about.html" id="btnAbout" style="text-decoration: unset">About</a>
+		</div>
+	</nav> 
 </header>
 `;
 
