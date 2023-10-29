@@ -208,9 +208,6 @@ input:hover,
 .filter-repos:hover {
 /* background: rgba(10, 10, 15, 0.5); */
 transition: all 0.5s;
--moz-filter: blur(5px);
--o-filter: blur(5px);
--ms-filter: blur(5px);
 -webkit-backdrop-filter: blur(5px);
 backdrop-filter: blur(5px);
 box-shadow: 0 0 50mm rgba(0,0,0,.7);
