@@ -104,6 +104,7 @@ to {
 	-moz-filter: blur(32px);
 	-o-filter: blur(32px);
 	-ms-filter: blur(32px);
+	filter: blur(32px);
 	-webkit-backdrop-filter: blur(32px);
 	backdrop-filter: blur(32px);
 	transform: scale(2);
@@ -112,92 +113,111 @@ to {
 }
 
 @keyframes shake {
-0% { transform: rotate(0deg); }
-25% { transform: rotate(.5deg); }
-50% { transform: rotate(0eg); }
-75% { transform: rotate(-.5deg); }
-100% { transform: rotate(0deg); }
+	0% { transform: rotate(0deg); }
+	25% { transform: rotate(.5deg); }
+	50% { transform: rotate(0eg); }
+	75% { transform: rotate(-.5deg); }
+	100% { transform: rotate(0deg); }
 }
 
 @keyframes background-pan {
-from {
-	background-position: 0% center;
-}
-to {
-	background-position: -200% center;
-}
+	from {
+		background-position: 0% center;
+	}
+	to {
+		background-position: -200% center;
+	}
 }
 /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 
 
 /* animate class */
 .animate {
-animation-duration: 0.5s;
-animation-fill-mode: both;
+	-webkit-animation-duration: 0.5s;
+	animation-duration: 0.5s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
 }
 
 .animate.animate--infinite {
-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
 }
 
 .animate.animation--delay-1s {
-animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
 }
 .animate.animation--delay-p5s {
-animation-delay: 0.5s;
+	-webkit-animation-duration: 0.5s;
+	animation-delay: 0.5s;
 }
 
 .animate.animation--delay-p3s {
-animation-delay: 0.3s;
+	-webkit-animation-duration: 0.3s;
+	animation-delay: 0.3s;
 }
 
 .animate.animation--fast {
-animation-duration: 0.3s;
+	-webkit-animation-duration: 0.3s;
+	animation-duration: 0.3s;
 }
 
 .animate.animation--slow {
-animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
 }
 
 /* real utility classes */
 
 .animate.slideInTop {
-animation-name: slideInTop;
-animation-timing-function: ease-in;
+	animation-name: slideInTop;
+	-webkit-transition-timing-function: ease-in;
+	animation-timing-function: ease-in;
 }
 
 .animate.bounce {
-animation-name: bounce;
+	animation-name: bounce;
+	-webkit-animation-name: bounce;
 }
 
 .animate.zoomIn {
-transition-timing-function: linear;
-animation-name: zoomIn;
+	-webkit-transition-timing-function: linear;
+	transition-timing-function: linear;
+	-webkit-animation-name: reveal;
+	animation-name: zoomIn;
+	animation-name: zoomIn;
 }
 
 .animate.zoomOut {
-transition-timing-function: linear;
-animation-name: zoomOut;
+	-webkit-transition-timing-function: linear;
+	transition-timing-function: linear;
+	-webkit-animation-name: zoomOut;
+	animation-name: zoomOut;
 }
 
 .animate.reveal {
-transition-timing-function: linear;
-animation-name: reveal;
+	-webkit-transition-timing-function: linear;
+	transition-timing-function: linear;
+	-webkit-animation-name: reveal;
+	animation-name: reveal;
 }
 
 .animate.shake {
-animation-name: shake
+	-webkit-animation-name: shake;
+	animation-name: shake;
 }
 
 /* transition */
 * {
-transition: all 0.3s; 
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s; 
 }
 
 
 .js-tilt-glare {
-border-radius: 18px;
-overflow: hidden;
+	border-radius: 18px;
+	overflow: hidden;
 }
 
 /* topbar styles ========================================== */
@@ -243,6 +263,7 @@ header {
 	background: rgba(128, 128, 128, 0.2);
 	border-radius: 1mm;
 	transform: scaleX(0);
+	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
 }
 
@@ -251,14 +272,12 @@ header {
 }
 
 .navBar a:hover {
-/* background: rgba(255, 255, 255, 0.2); */
-/* outline: ridge rgba(128, 128, 128, .6); */
--moz-filter: blur(10px);
--o-filter: blur(10px);
--ms-filter: blur(10px);
--webkit-backdrop-filter: blur(10px);
-backdrop-filter: blur(10px);
-transition: all 1s
+	/* background: rgba(255, 255, 255, 0.2); */
+	/* outline: ridge rgba(128, 128, 128, .6); */
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	-webkit-transition: all 1s;
+	transition: all 1s
 }
 
 .navBar a.active::after {
@@ -280,23 +299,17 @@ header:hover,
 #navBarHeader:hover,
 #navBarHeader:active
 {
-transform: scale(1.005);
--moz-filter: blur(10px);
--o-filter: blur(10px);
--ms-filter: blur(10px);
--webkit-backdrop-filter: blur(10px);
-backdrop-filter: blur(10px);
-transition: all 0.5s
+	transform: scale(1.005);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	transition: all 0.5s
 }
 
 .navBar,
 header,
 #navBarHeader {
--moz-filter: blur(2.5px);
--o-filter: blur(2.5px);
--ms-filter: blur(2.5px);
--webkit-backdrop-filter: blur(2.5px);
-backdrop-filter: blur(2.5px);
+	-webkit-backdrop-filter: blur(2.5px);
+	backdrop-filter: blur(2.5px);
 }
 
 /* other ================================================== */
@@ -324,6 +337,7 @@ a:hover {
 	text-decoration: underline;
 	text-decoration-thickness: 3px;
 	-webkit-text-decoration-line: underline;
+	text-decoration-line: underline;
 	cursor: pointer;
 	transition-timing-function: cubic-bezier(.4,0,.2,1);
 	transition-duration: .15s;
@@ -341,3 +355,5 @@ a:hover {
 	/* border-radius: 8px; */
 	/* color: #F4E8C1; */
 }
+
+/* TODO: Check dest if it compatible all browser */
