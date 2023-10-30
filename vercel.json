@@ -7,5 +7,25 @@
 	{
 		"source": "/about",
 		"destination": "/pages/info/about.html"
+	},
+	{
+		"source": "/pages/repo/github/repos.html",
+		"has": [
+			{
+				"type": "host",
+				"value": "ghrepos.littleblack111.com"
+			}
+		],
+		"destination": "/pages/repo/github/repos.html"
+	},
+	{
+		"source": "/pages/info/about.html",
+		"has": [
+			{
+				"type": "host",
+				"value": "about.littleblack111.com"
+			}
+		],
+		"destination": "/pages/repo/info/about.html"
 	}]
 }
