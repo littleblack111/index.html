@@ -108,7 +108,8 @@ a {
 	background: transparent;
 	color: var(--accent);
 	text-decoration: none;
-	-webkit-transition: background 0.5s
+	-webkit-transition: background 0.5s;
+	transition: background 0.5s
 }
 
 .github-img {
@@ -157,6 +158,10 @@ background: transparent;
 }
 
 .user-info img:hover {
+	border-radius: 5%;
+}
+
+.user-info img:hover {
 transform: scale(1.1);
 box-shadow: 0 0 100mm rgba(255, 238, 16,.7);
 }
@@ -184,9 +189,9 @@ box-shadow: 0 0 100mm rgba(255, 238, 16,.7);
 }
 
 .user-info .usertitle {
-font-family: audiowide;
-text-transform: uppercase;
-font-size: 2vw;
+	font-family: audiowide;
+	text-transform: uppercase;
+	font-size: 2vw;
 }
 
 .filter-repos,
@@ -201,25 +206,26 @@ input {
 	border: 2px solid var(--accent);
 	box-shadow: 0 0 10mm rgba(0,0,0,.7);
 	text-align: center;
-	-webkit-transition: all 0.5s
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s
 }
 
 input:hover,
 .filter-repos:hover {
-/* background: rgba(10, 10, 15, 0.5); */
-transition: all 0.5s;
--webkit-backdrop-filter: blur(5px);
-backdrop-filter: blur(5px);
-box-shadow: 0 0 50mm rgba(0,0,0,.7);
-transform: scale(1.1);
-transition: all 0.5s;
+	/* background: rgba(10, 10, 15, 0.5); */
+	transition: all 0.5s;
+	-webkit-backdrop-filter: blur(5px);
+	backdrop-filter: blur(5px);
+	box-shadow: 0 0 50mm rgba(0,0,0,.7);
+	transform: scale(1.1);
+	transition: all 0.5s;
 }
 
 input:active,
 .filter-repos:active {
-/* background: #F4E8C1; */
-box-shadow: 0 0 10mm rgba(0,0,0,.7);
-background: rgba(244, 232, 193, 0.3);
+	/* background: #F4E8C1; */
+	box-shadow: 0 0 10mm rgba(0,0,0,.7);
+	background: rgba(244, 232, 193, 0.3);
 }
 
 .repos {
@@ -238,15 +244,17 @@ background: rgba(244, 232, 193, 0.3);
 }
 
 .repos:hover {
-background: rgba(0, 0, 0, 0.3);
-transform: scale(1.01);
-box-shadow: 0 0 20mm rgba(128,128,128,.7);
-transition: all 0.5s;
+	background: rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 10mm rgba(0,0,0,.7);
+	transform: scale(1.01);
+	box-shadow: 0 0 20mm rgba(128,128,128,.7);
+	transition: all 0.5s;
 }
 
 .repo-title {
 	margin: 4px;
 	width: 100%;
+	font-weight: bold;
 	text-align: center;
 	color: var(--accent);
 }
@@ -265,33 +273,32 @@ transition: all 0.5s;
 .repo-list li {
 	width: 100%;
 	min-height: 180px;
-	border-radius: 10px;
+	border-radius: 16px;
 	margin: 1em 0;
 	border: 1px solid var(--accent);
 	padding: 1em;
 	text-align: center;
 	background: transparent;
-	-moz-filter: blur(20px);
-	-o-filter: blur(20px);
-	-ms-filter: blur(20px);
 	-webkit-backdrop-filter: blur(20px);
 	backdrop-filter: blur(20px);
 	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
 	scroll-snap-align: center
 	/* box-shadow: 0 0 10mm rgba(0,0,0,.7); */
 	/* background: rgba(128, 128, 128, 0.1); */
 }
 
 .repo-list h3, span{
-background: transparent;
+	background: transparent;
 }
 
 .repo:hover {
 	/* box-shadow: 0 3px 6px var(--accent), 0 3px 6px var(--accent); */
 	box-shadow: 0 0 50mm rgba(255, 238, 16,.7);
 	background: rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
 	transform: scale(1.05);
-	transition: background 0.5s, transform 1s, all 0.3s
+	transition: background 0.5s, transform 1s, boarder 1.5s, all 0.3s
 }
 
 .repo-list:hover:has(li:hover) li:not(:hover) {
@@ -312,6 +319,7 @@ background: transparent;
 	border: 2px solid var(--accent);
 	color: var(--text);
 	-webkit-transition: background 0.5s, transform 0.5s, border 0.5s, all 0.5s;
+	transition: background 0.5s, transform 0.5s, border 0.5;
 }
 
 .link-btn:hover {
@@ -330,63 +338,38 @@ background: transparent;
 
 .intro:hover,
 .user-info:hover {
--moz-filter: blur(8px);
--o-filter: blur(8px);
--ms-filter: blur(8px);
--webkit-backdrop-filter: blur(8px);
-backdrop-filter: blur(8px);
-transform: scale(1.1);
-transition: all 0.5s;
+	-webkit-backdrop-filter: blur(8px);
+	backdrop-filter: blur(8px);
+	transform: scale(1.1);
+	transition: all 0.5s;
 }
 
 .user-info {
-/* background: transparent; */
-background: rgba(128, 128, 128, 0.2);
--moz-filter: blur(2px);
--o-filter: blur(2px);
--ms-filter: blur(2px);
--webkit-backdrop-filter: blur(2px);
-backdrop-filter: blur(2px);
-/* box-shadow: 0 0 10mm rgba(0,0,0,.7); */
+	/* background: transparent; */
+	background: rgba(128, 128, 128, 0.2);
+	-webkit-backdrop-filter: blur(2px);
+	backdrop-filter: blur(2px);
+	/* box-shadow: 0 0 10mm rgba(0,0,0,.7); */
 }
 
 .repo {
-	-moz-filter: blur(20px);
-	-o-filter: blur(20px);
-	-ms-filter: blur(20px);
 	-webkit-backdrop-filter: blur(20px);
 	backdrop-filter: blur(20px);
 	box-shadow: 0 0 10mm rgba(0,0,0,.7);
 	overflow: auto;
 	overflow-x: hidden;
-	resize: both;
 }
 
 .rdescription {
-display: -webkit-box;
--webkit-box-orient: vertical;
--webkit-line-clamp: 3;
-overflow: hidden
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
 }
 
 .rdescription:hover {
--webkit-line-clamp: unset;
+	-webkit-line-clamp: unset;
 }
-
-.rdescriptiontext:hover {
-/* animation: background-pan 3s linear infinite; */
-/* background: linear-gradient( */
-/*   to right, */
-/*   var(--purple), */
-/*   var(--violet), */
-/*   var(--pink), */
-/*   var(--purple) */
-/* ); */
-/* background-size: 200%; */
-/* -webkit-background-clip: text; */
-/* -webkit-text-fill-color: transparent; */
-}
-
 
 @media (min-width: 700px) {
 	.user-info div {
@@ -418,3 +401,5 @@ overflow: hidden
 		width: 30%;
 	}
 }
+
+/* TODO: Make all webkit-transition do with normal transition as well */
