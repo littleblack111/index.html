@@ -342,7 +342,6 @@ a:hover {
 	transition-timing-function: cubic-bezier(.4,0,.2,1);
 	transition-duration: .15s;
 	text-underline-offset: 1px;
-	transition: all .5s;
 	position: relative;
 	height: 100%;
 	font-size: 5mm;
@@ -352,6 +351,9 @@ a:hover {
 	margin-right: 5mm;
 	padding-top: 3mm;
 	padding-bottom: 3mm;
+	font-weight: bold;
+	-webkit-transition: all .5s;
+	transition: all .5s;
 	/* border-radius: 8px; */
 	/* color: #F4E8C1; */
 }

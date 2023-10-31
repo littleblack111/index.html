@@ -306,7 +306,7 @@ input:active,
 	background: rgba(0, 0, 0, 0.3);
 	transform: scale(0.95);
 	animation-duration: 0.5s;
-	transition: background 0.5s, transform 1s, all 0.3s
+	transition: background 0.5s, transform 1s, all 0.3s;
 }
 
 
@@ -318,15 +318,18 @@ input:active,
 	border-radius: 30px;
 	border: 2px solid var(--accent);
 	color: var(--text);
+	transform: scale(1);
 	-webkit-transition: background 0.5s, transform 0.5s, border 0.5s, all 0.5s;
-	transition: background 0.5s, transform 0.5s, border 0.5;
+	transition: background 0.5s, transform 0.5s, border 0.5, all 0.3s;
 }
 
 .link-btn:hover {
 	background: rgba(22, 136, 240, 0.5);
 	border: 2px solid var(--text);
+	border-radius: 16px;
 	transform: scale(1.1);
 	transition: background 0.5s, transform 0.5s, border 0.5s, all 0.5s;
+	-webkit-transition: background 0.5s, transform 0.5s, border 0.5s, all 0.5s;
 	box-shadow: 0 0 50mm rgba(0, 156, 255,.7);
 }
 
