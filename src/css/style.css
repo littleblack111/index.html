@@ -140,8 +140,8 @@ to {
 }
 
 .animate.animate--infinite {
-	animation-iteration-count: infinite;
 	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
 }
 
 .animate.animation--delay-1s {
@@ -150,11 +150,13 @@ to {
 }
 .animate.animation--delay-p5s {
 	-webkit-animation-duration: 0.5s;
+	animation-duration: 0.5s;
 	animation-delay: 0.5s;
 }
 
 .animate.animation--delay-p3s {
 	-webkit-animation-duration: 0.3s;
+	animation-duration: 0.3s;
 	animation-delay: 0.3s;
 }
 
@@ -173,12 +175,14 @@ to {
 .animate.slideInTop {
 	animation-name: slideInTop;
 	-webkit-transition-timing-function: ease-in;
+	transition-timing-function: ease-in;
+	-webkit-animation-timing-function: ease-in;
 	animation-timing-function: ease-in;
 }
 
 .animate.bounce {
-	animation-name: bounce;
 	-webkit-animation-name: bounce;
+	animation-name: bounce;
 }
 
 .animate.zoomIn {
