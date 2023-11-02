@@ -1,6 +1,4 @@
 const username = 'littleblack111';
-const clientId = '8aa6ec904eca5e0bc1e3'
-const clientSecret = 'b9ac8092b0b95f86871f5d1da81f666146d71200';
 const hideForks = true;
 const repoList = document.querySelector('.repo-list');
 const reposSection = document.querySelector('.repos');
@@ -10,13 +8,6 @@ const filterInput = document.querySelector('.filter-repos');
 const getProfile = async () => {
 	const res = await fetch(
 		`https://api.github.com/users/${username}`,
-		{
-			headers: {
-				Accept: 'application/vnd.github+json',
-				Authorization: //'token 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'
-				`Basic ${btoa(`${clientId}:${clientSecret}`)}`
-			}
-		}
 	);
 	const profile = await res.json();
 	displayProfile(profile);
@@ -56,14 +47,6 @@ const getRepos = async () => {
 	let res;
 	res = await fetch(
 		`https://api.github.com/users/${username}/repos?&sort=pushed`,
-		{
-			headers: {
-				Accept: 'application/vnd.github+json',
-				Authorization:
-				`Basic ${btoa(`${clientId}:${clientSecret}`)}`
-					// 'token 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'
-			}
-		}
 	);
 	let data = await res.json();
 	repos = repos.concat(data);

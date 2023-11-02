@@ -7,8 +7,6 @@ function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyri
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 var username = 'littleblack111';
-var clientId = '8aa6ec904eca5e0bc1e3';
-var clientSecret = 'b9ac8092b0b95f86871f5d1da81f666146d71200';
 var hideForks = true;
 var repoList = document.querySelector('.repo-list');
 var reposSection = document.querySelector('.repos');
@@ -22,13 +20,7 @@ var getProfile = /*#__PURE__*/function () {
       while (1) switch (_context.prev = _context.next) {
         case 0:
           _context.next = 2;
-          return fetch("https://api.github.com/users/".concat(username), {
-            headers: {
-              Accept: 'application/vnd.github+json',
-              Authorization: //'token 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'
-              "Basic ".concat(btoa("".concat(clientId, ":").concat(clientSecret)))
-            }
-          });
+          return fetch("https://api.github.com/users/".concat(username));
         case 2:
           res = _context.sent;
           _context.next = 5;
@@ -63,13 +55,7 @@ var getRepos = /*#__PURE__*/function () {
         case 0:
           repos = [];
           _context2.next = 3;
-          return fetch("https://api.github.com/users/".concat(username, "/repos?&sort=pushed"), {
-            headers: {
-              Accept: 'application/vnd.github+json',
-              Authorization: "Basic ".concat(btoa("".concat(clientId, ":").concat(clientSecret)))
-              // 'token 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'
-            }
-          });
+          return fetch("https://api.github.com/users/".concat(username, "/repos?&sort=pushed"));
         case 3:
           res = _context2.sent;
           _context2.next = 6;
