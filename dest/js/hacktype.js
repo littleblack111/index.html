@@ -9,7 +9,7 @@ function hackType() {
   var intervals = [];
   elements.forEach(function (element) {
     var iteration = 0;
-    intervals.push(setInterval(function () {
+    var interval = setInterval(function () {
       element.innerText = element.innerText.split("").map(function (letter, index) {
         if (index < iteration) {
           return element.dataset.value[index];
@@ -17,21 +17,22 @@ function hackType() {
         return letters[Math.floor(Math.random() * 26)];
       }).join("");
       if (iteration >= element.dataset.value.length) {
-        clearInterval(intervals.shift());
+        clearInterval(interval);
       }
       iteration += 1 / 5;
-    }, 20));
+    }, 20);
+    intervals.push(interval);
   });
 }
 hackType(); // Call hackType initially
 
 setInterval(function () {
-  var intervals = document.querySelectorAll(".hacktype-interval");
-  intervals.forEach(function (interval) {
+  var elements = document.querySelectorAll(".hacktype");
+  elements.forEach(function (element) {
     return clearInterval(interval);
   }); // Clear existing intervals
   hackType(); // Call hackType again
-}, 10000); // Repeat every 5 seconds
+}, 10000); // Repeat every 10 seconds
 
 // Check if the document becomes visible again
 document.addEventListener("visibilitychange", function () {
