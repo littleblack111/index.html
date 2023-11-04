@@ -7,5 +7,10 @@
 	{
 		"source": "/about",
 		"destination": "/pages/info/about.html"
-	}]
+	},
+	{
+		"source": "/rr",
+		"destination": "https://www.youtube.com/watch?v=xvFZjo5PgG0"
+	}],
+	"cleanUrls": true
 }
