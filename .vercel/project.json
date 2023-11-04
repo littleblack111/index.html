@@ -1,1 +1,16 @@
-{"orgId":"4bn9rFeCDGtxoNaWKFuaMkkz","projectId":"prj_l5ZlF88jQUzM6RIBkB0OJCFsf504"}
+{
+  "projectId": "prj_l5ZlF88jQUzM6RIBkB0OJCFsf504",
+  "orgId": "4bn9rFeCDGtxoNaWKFuaMkkz",
+  "settings": {
+    "createdAt": 1696340022289,
+    "framework": null,
+    "devCommand": null,
+    "installCommand": null,
+    "buildCommand": null,
+    "outputDirectory": ".",
+    "rootDirectory": null,
+    "directoryListing": false,
+    "nodeVersion": "18.x",
+    "analyticsId": "bXTevT8bsfsAnYp0iKTEuJYjiOL"
+  }
+}
