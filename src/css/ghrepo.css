@@ -28,7 +28,6 @@
 	box-sizing: border-box;
 	/* background-image: url(/images/backgroundNightCity.jpg); */
 	background: transparent;
-	transition: transform 0.5s;
 }
 
 
@@ -155,15 +154,17 @@ background: transparent;
 	height: auto;
 	box-shadow: 0 0 10mm rgba(0,0,0,.7);
 	border-radius: 100%;
+	transition: all 0.3s;
 }
 
 .user-info img:hover {
 	border-radius: 5%;
+	transition: all 0.3s;
 }
 
 .user-info img:hover {
-transform: scale(1.1);
-box-shadow: 0 0 100mm rgba(255, 238, 16,.7);
+	transform: scale(1.1);
+	box-shadow: 0 0 100mm rgba(255, 238, 16,.7);
 }
 
 .user-info div {
@@ -186,7 +187,9 @@ box-shadow: 0 0 100mm rgba(255, 238, 16,.7);
 
 .user-info *:hover {
 	transform: scale(1.1);
+	transition: transform 0.3s;
 }
+
 
 .user-info .usertitle {
 	font-family: audiowide;
