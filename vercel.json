@@ -7,6 +7,5 @@
 	{
 		"source": "/about",
 		"destination": "/pages/info/about.html"
-	}],
-	"cleanUrls": true
+	}]
 }
