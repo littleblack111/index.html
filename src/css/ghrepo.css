@@ -28,7 +28,7 @@
 	box-sizing: border-box;
 	/* background-image: url(/images/backgroundNightCity.jpg); */
 	background: transparent;
-
+	transition: transform 0.5s;
 }
 
 
@@ -40,7 +40,7 @@ body {
 }
 
 main {
-margin-top: 3em
+	margin-top: 3em
 }
 
 .bgWrap {
@@ -318,7 +318,6 @@ input:active,
 	border-radius: 30px;
 	border: 2px solid var(--accent);
 	color: var(--text);
-	transform: scale(1);
 	-webkit-transition: background 0.5s, transform 0.5s, border 0.5s, all 0.5s;
 	transition: background 0.5s, transform 0.5s, border 0.5, all 0.3s;
 }
@@ -329,8 +328,8 @@ input:active,
 	border-radius: 16px;
 	transform: scale(1.1);
 	box-shadow: 0 0 50mm rgba(0, 156, 255,.7);
-	transition: background 0.5s, transform 0.5s, border 0.5s, all 0.5s;
 	-webkit-transition: background 0.5s, transform 0.5s, border 0.5s, all 0.5s;
+	transition: background 0.5s, transform 0.5s, border 0.5s, all 0.5s;
 }
 
 .repo-list p {
