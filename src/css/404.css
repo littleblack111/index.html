@@ -6,12 +6,8 @@
 body {
 	padding: 0;
 	margin: 0;
-	transition: transform 0.5s;
-}
-
-body:hover {
-	transform: scale(1.1);
-	transition: transform 0.5s;
+    transform: scale(1.1);
+	transition: transform 1s;
 }
 
 #notfound {
@@ -75,6 +71,7 @@ body:hover {
 	text-shadow: 0px .5px 0px #ff005a, 0px 2px 0px #8400ff;
 	letter-spacing: 13px;
 	margin: 0;
+	text-shadow: 0 0 0.125em hsl(255 0% 100% / 0.1), 0 0 0.130em currentColor;
 }
 
 .notfound a {
@@ -90,12 +87,14 @@ body:hover {
 	font-weight: 700;
 	-webkit-transition: 0.2s all;
 	transition: 0.2s all;
+	text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.1), 0 0 0.45em currentColor;
+	box-shadow: 0 0 0.5em 0 currentColor;
 }
 
 .notfound a:hover {
 	color: #8400ff;
 	transform: scale(1.01);
-	box-shadow: 0 0 25mm #8400ff;
+	box-shadow: 0 0 0.5em 0 currentColor, 0 0 0.5em 0 currentColor, 0 0 25mm #8400ff;
 	transition: transform 0.5s;
 }
 
