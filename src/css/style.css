@@ -41,6 +41,8 @@ src: url(/fonts/audiowide.ttf);
     margin: 0;
     font-family: liga;
     text-shadow: 0px 0px 1px black;
+    -webkit-font-smoothing: antialiased;
+    font-smooth: antialiased;
     /* transition: all 0.3s; */
 }
 
@@ -407,4 +409,36 @@ a:hover {
     width: 20vmax;
     z-index: 0;
     animation-fill-mode: forwards;
+}
+
+@keyframes rotate {
+    from {
+        rotate: 0deg;
+    }
+    
+    50% {
+        scale: 1 1.25;
+    }
+    
+    to {
+        rotate: 360deg;
+    }
+}
+
+.sblob {
+    background-color: white;
+    height: 15vmax;
+    width: 20vmax;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    border-radius: 50%;
+    background: linear-gradient(to right, #00FFFF, mediumpurple);
+    animation: rotate 20s infinite;
+    opacity: 0.8;
+    filter: blur(7vmax);
+    -webkit-filter: blur(7vmax);
+    z-index: -1;
 }

@@ -54,7 +54,8 @@ main {
     width: 100%;
     height: 100%;
     background-color: rgb(48, 60, 100);
-    background-image: url(/images/heigh-grass.jpg), url(/images/heigh-grass.webp);
+    /* background-image: url(/images/heigh-grass.jpg), url(/images/heigh-grass.webp); */
+    background-color: #05010d;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -120,8 +121,8 @@ a {
     background: transparent;
     color: var(--accent);
     text-decoration: none;
-    -webkit-transition: background 0.5s;
-    transition: background 0.5s
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s
 }
 
 .github-img {
@@ -135,7 +136,7 @@ ul {
 }
 
 .user-info * {
-background: transparent;
+    background: transparent;
 }
 
 .user-info {
@@ -248,7 +249,7 @@ input:active,
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background: rgba(128, 128, 128, 0.2);
+    /* background: rgba(128, 128, 128, 0.2); */
     margin-top: 0;
     padding: 2em;
     /* border-bottom-left-radius: 20px; */
@@ -369,10 +370,11 @@ input:active,
 
 .user-info {
     /* background: transparent; */
-    background: rgba(128, 128, 128, 0.2);
+    /* background: rgba(128, 128, 128, 0.2); */
     -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
     /* box-shadow: 0 0 10mm rgba(0,0,0,.7); */
+    border: 2px solid rgb(255, 255, 255)
 }
 
 .floattext {
