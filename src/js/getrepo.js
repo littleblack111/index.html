@@ -18,12 +18,12 @@ getProfile();
 const displayProfile = (profile) => {
 	const userInfo = document.querySelector('.user-info');
 	userInfo.innerHTML = `
-		<figure>
+		<figure class="floattext">
 			<a href=${profile.html_url}><img alt="user avatar" src=${profile.avatar_url}></a>
 		</figure>
-		<div>
+		<div class="floattext">
 			<!-- <h2><a href=${profile.blog}><strong>${profile.name}</strong></a></h2> -->
-			<h2><a href=/><strong class="usertitle">${profile.name}</strong></a></h2>
+			<h2><a href=/><strong data-value="${profile.name}" class="usertitle hacktype">${profile.name}</strong></a></h2>
 			<!-- <h2><a href=${profile.html_url}><strong>${profile.name}</strong></a></h2> -->
 			<p>${profile.bio}</p>
 			<p>
