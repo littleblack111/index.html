@@ -113,10 +113,14 @@ filterInput.addEventListener('input', (e) => {
 		const lowerText = repo.innerText.toLowerCase();
 		if (lowerText.includes(searchLowerText)) {
 			repo.classList.remove('hide');
-		} else {
+            repo.style.position = 'relative'
+        } else {
 			repo.classList.add('hide');
-		}
-	}
+            repo.addEventListener('animationend', () => {
+                repo.style.position = 'absolute'
+            });
+        }
+    }
 });
 
 // for programming language icons

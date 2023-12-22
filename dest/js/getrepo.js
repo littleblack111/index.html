@@ -131,14 +131,21 @@ filterInput.addEventListener('input', function (e) {
   var _iterator2 = _createForOfIteratorHelper(repos),
     _step2;
   try {
-    for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
+    var _loop = function _loop() {
       var repo = _step2.value;
       var lowerText = repo.innerText.toLowerCase();
       if (lowerText.includes(searchLowerText)) {
         repo.classList.remove('hide');
+        repo.style.position = 'relative';
       } else {
         repo.classList.add('hide');
+        repo.addEventListener('animationend', function () {
+          repo.style.position = 'absolute';
+        });
       }
+    };
+    for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
+      _loop();
     }
   } catch (err) {
     _iterator2.e(err);
