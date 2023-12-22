@@ -1,9 +1,9 @@
 const blob = document.querySelector('.sblob');
 
 window.onpointermove = event => { 
-    const { clientX, clientY } = event;
+    const { pageX, pageY } = event;
     blob.animate({
-        left: `${clientX}px`,
-        top: `${clientY}px`
+        left: `${pageX}px`,
+        top: `${pageY}px`
     }, { duration: 1000, fill: "forwards" });
 }
