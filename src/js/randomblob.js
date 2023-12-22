@@ -27,7 +27,7 @@ function main() {
         let fadeOutAnimation = blob.animate([
             // keyframes
             { opacity: .40 }, 
-            { opacity: 0 }
+            { opacity: 0, scale: .8}
         ], { 
             // timing options
             duration: 3000,
@@ -39,8 +39,8 @@ function main() {
             randomPosition(blob);
             blob.animate([
                 // keyframes
-                { opacity: 0 }, 
-                { opacity: .40 }
+                { opacity: 0, scale: .8 },
+                { opacity: .40, scale: 1 }
             ], { 
                 // timing options
                 duration: 3000,
