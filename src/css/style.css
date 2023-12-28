@@ -30,8 +30,8 @@
 }
 
 @font-face {
-font-family: audiowide;
-src: url(/fonts/audiowide.ttf);
+    font-family: audiowide;
+    src: url(/fonts/audiowide.ttf);
 }
 /* page setup ============================================= */
 
@@ -46,6 +46,12 @@ src: url(/fonts/audiowide.ttf);
     /* transition: all 0.3s; */
 }
 
+@media (pointer:none), (pointer:coarse) {
+    * {
+        transition: all .3s;
+    }
+}
+
 body {
     top: 0;
     left: 0;
@@ -53,7 +59,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-display: none;
+    display: none;
 }
 
 /* animation ============================================== */
@@ -149,6 +155,17 @@ to {
     to {
         opacity: 0;
         scale: 0.8
+    }
+}
+
+@keyframes scroll {
+    from {
+        opacity: 0.8;
+        scale: 0.75;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
     }
 }
 
@@ -357,10 +374,10 @@ section {
 }
 
 .wrapper {
-height: 100vh;
-overflow-y: auto;
-overflow-x: hidden;
-perspective: 10px;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
 }
 
 a:hover {
