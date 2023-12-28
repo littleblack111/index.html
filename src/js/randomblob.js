@@ -1,4 +1,3 @@
-var blob = document.querySelector('.blob')
 let isFirstTime = true;
 
 function getRandomInt(min, max) {
