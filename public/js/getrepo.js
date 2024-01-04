@@ -39,7 +39,7 @@ var getProfile = function () {
 getProfile();
 var displayProfile = function displayProfile(profile) {
   var userInfo = document.querySelector('.user-info');
-  userInfo.innerHTML = "\n\t\t<figure class=\"floattext\">\n\t\t\t<a href=".concat(profile.html_url, "><img alt=\"user avatar\" class=\"tilt\" data-tilt-reverse=\"false\" src=").concat(profile.avatar_url, "></a>\n\t\t</figure>\n\t\t<div class=\"floattext\">\n\t\t\t<!-- <h2><a href=").concat(profile.blog, "><strong>").concat(profile.name, "</strong></a></h2> -->\n\t\t\t<h2><a href=/><strong data-value=\"").concat(profile.name, "\" class=\"usertitle hacktype\">").concat(profile.name, "</strong></a></h2>\n\t\t\t<!-- <h2><a href=").concat(profile.html_url, "><strong>").concat(profile.name, "</strong></a></h2> -->\n\t\t\t<p>").concat(profile.bio, "</p>\n\t\t\t<p>\n\t\t\t<strong>Mail:</strong> ").concat(profile.email, "\n\t\t\t</p>\n\t\t\t<p>\n\t\t\t\t<strong>Location:</strong> ").concat(profile.location, "\n\t\t\t</p>\n\t\t\t<p>\n\t\t\t\t<strong>@").concat(profile.login, " </strong>\n\t\t\t\tRepos: ").concat(profile.public_repos, "\n\t\t\t\tGists: ").concat(profile.public_gists, "\n\t\t\t</p>\n\t\t</div>\n\t");
+  userInfo.innerHTML = "\n\t\t<figure class=\"floattext\">\n\t\t\t<a href=".concat(profile.html_url, "><img alt=\"user avatar\" src=").concat(profile.avatar_url, "></a>\n\t\t</figure>\n\t\t<div class=\"floattext\">\n\t\t\t<!-- <h2><a href=").concat(profile.blog, "><strong>").concat(profile.name, "</strong></a></h2> -->\n\t\t\t<h2><a href=/><strong data-value=\"").concat(profile.name, "\" class=\"usertitle hacktype\">").concat(profile.name, "</strong></a></h2>\n\t\t\t<!-- <h2><a href=").concat(profile.html_url, "><strong>").concat(profile.name, "</strong></a></h2> -->\n\t\t\t<p>").concat(profile.bio, "</p>\n\t\t\t<p>\n\t\t\t<strong>Mail:</strong> ").concat(profile.email, "\n\t\t\t</p>\n\t\t\t<p>\n\t\t\t\t<strong>Location:</strong> ").concat(profile.location, "\n\t\t\t</p>\n\t\t\t<p>\n\t\t\t\t<strong>@").concat(profile.login, " </strong>\n\t\t\t\tRepos: ").concat(profile.public_repos, "\n\t\t\t\tGists: ").concat(profile.public_gists, "\n\t\t\t</p>\n\t\t</div>\n\t");
 };
 var getRepos = function () {
   var _ref2 = _asyncToGenerator(_regeneratorRuntime().mark(function _callee2() {
@@ -90,7 +90,7 @@ var displayRepos = function displayRepos(repos) {
       var starsUrl = "".concat(userHome, "/").concat(repo.name, "/stargazers");
       var forksUrl = "".concat(userHome, "/").concat(repo.name, "/network/members");
       var listItem = document.createElement('li');
-      listItem.classList.add('repo');
+      listItem.classList.add('repo', 'animate', 'zoomIn');
       listItem.innerHTML = "\n\t\t\t<h2 class=\"repo-title\">".concat(repo.name, "</h2>\n\t\t\t<span class=\"rdescription\">").concat(repo.description ? "<span class=\"rdescriptiontext\">".concat(repo.description, "</span>") : '', "<br/><br/>");
       if (repo.stargazers_count > 0) {
         listItem.innerHTML += "<a href=\"".concat(starsUrl, "\">\n\t\t\t<span>\u2B50 ").concat(repo.stargazers_count, "</span></a>");
@@ -102,9 +102,9 @@ var displayRepos = function displayRepos(repos) {
         listItem.innerHTML += "<a href=\"".concat(starsUrl, "\">\n\t\t\t<span>").concat(devicons["Git"], " ").concat(repo.forks_count, "</span></a>");
       }
       if (repo.homepage && repo.homepage !== "") {
-        listItem.innerHTML += "<br /> <br />\n\t\t\t<a class=\"link-btn\" href=".concat(repo.html_url, ">Code ").concat(devicons["Github"], "</a>\n\t\t\t<a class=\"link-btn\" href=").concat(repo.homepage, ">Live ").concat(devicons["Chrome"], "</a> <br />");
+        listItem.innerHTML += "<br /> <br />\n\t\t\t<a class=\"link-btn btn-code\" href=".concat(repo.html_url, ">Code ").concat(devicons["Github"], "</a>\n\t\t\t<a class=\"link-btn btn-live\" href=").concat(repo.homepage, ">Live ").concat(devicons["Chrome"], "</a> <br />");
       } else {
-        listItem.innerHTML += "<br /> <br />\n\t\t\t<a class=\"link-btn\" href=".concat(repo.html_url, ">View Project ").concat(devicons["Github"], "</a><br />");
+        listItem.innerHTML += "<br /> <br />\n\t\t\t<a class=\"link-btn btn-gh\" href=".concat(repo.html_url, ">View Project ").concat(devicons["Github"], "</a><br />");
       }
       repoList.append(listItem);
     }
@@ -130,7 +130,11 @@ filterInput.addEventListener('input', function (e) {
       } else {
         repo.classList.add('hide');
         repo.addEventListener('animationend', function () {
-          repo.style.position = 'absolute';
+          if (searchLowerText != '') {
+            repo.style.position = 'absolute';
+          } else {
+            repo.style.position = 'relative';
+          }
         });
       }
     };

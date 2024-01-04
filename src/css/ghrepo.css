@@ -215,6 +215,7 @@ ul {
 input {
     /* background: rgba(10, 10, 15, 0.3); */
     background: rgba(255, 255, 255, 0.01);
+    color: white;
     width: 50%;
     border-radius: 20px;
     min-width: 300px;
@@ -413,6 +414,16 @@ input:active,
 
 .rdescription:hover {
     -webkit-line-clamp: unset;
+}
+
+.btn-code:hover {
+    box-shadow: 0 0 50mm linear-gradient(
+        45deg,
+        #f83a3a 10%,
+        #f13dd4 50%,
+        #7000ff 90%
+    );
+    border: 2px solid linear-gradient(45deg,#f83a3a 10%,#f13dd4 50%,#7000ff 90%)
 }
 
 @media (min-width: 700px) {
