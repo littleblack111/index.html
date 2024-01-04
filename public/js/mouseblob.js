@@ -1,13 +1,15 @@
 "use strict";
 
 window.onpointermove = function (event) {
-  var pageX = event.pageX,
-    pageY = event.pageY;
+  var x = event.pageX;
+  var y = event.pageY;
   blob.animate({
-    left: "".concat(pageX, "px"),
-    top: "".concat(pageY, "px")
+    left: "".concat(x, "px"),
+    top: "".concat(y, "px")
   }, {
     duration: 1000,
     fill: "forwards"
   });
+  blob.style.left = x + 'px';
+  blob.style.top = y + 'px';
 };
