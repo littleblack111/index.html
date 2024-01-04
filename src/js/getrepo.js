@@ -4,6 +4,7 @@ const repoList = document.querySelector('.repo-list');
 const reposSection = document.querySelector('.repos');
 const filterInput = document.querySelector('.filter-repos');
 
+
 // get information from github profile
 const getProfile = async () => {
 	const res = await fetch(
@@ -19,7 +20,7 @@ const displayProfile = (profile) => {
 	const userInfo = document.querySelector('.user-info');
 	userInfo.innerHTML = `
 		<figure class="floattext">
-			<a href=${profile.html_url}><img alt="user avatar" class="tilt" data-tilt-reverse="false" src=${profile.avatar_url}></a>
+			<a href=${profile.html_url}><img alt="user avatar" src=${profile.avatar_url}></a>
 		</figure>
 		<div class="floattext">
 			<!-- <h2><a href=${profile.blog}><strong>${profile.name}</strong></a></h2> -->
@@ -70,7 +71,7 @@ const displayRepos = (repos) => {
 		const forksUrl = `${userHome}/${repo.name}/network/members`
 
 		let listItem = document.createElement('li');
-		listItem.classList.add('repo');
+		listItem.classList.add('repo', 'animate', 'zoomIn')
 		listItem.innerHTML = `
 			<h2 class="repo-title">${repo.name}</h2>
 			<span class="rdescription">${repo.description ? `<span class="rdescriptiontext">${repo.description}</span>` : ''}<br/><br/>`
@@ -92,11 +93,11 @@ const displayRepos = (repos) => {
 
 		if (repo.homepage && repo.homepage !== "") {
 			listItem.innerHTML += `<br /> <br />
-			<a class="link-btn" href=${repo.html_url}>Code ${devicons["Github"]}</a>
-			<a class="link-btn" href=${repo.homepage}>Live ${devicons["Chrome"]}</a> <br />`;
+			<a class="link-btn btn-code" href=${repo.html_url}>Code ${devicons["Github"]}</a>
+			<a class="link-btn btn-live" href=${repo.homepage}>Live ${devicons["Chrome"]}</a> <br />`;
 		} else {
 			listItem.innerHTML += `<br /> <br />
-			<a class="link-btn" href=${repo.html_url}>View Project ${devicons["Github"]}</a><br />`;
+			<a class="link-btn btn-gh" href=${repo.html_url}>View Project ${devicons["Github"]}</a><br />`;
 		}
 
 		repoList.append(listItem);
@@ -117,7 +118,11 @@ filterInput.addEventListener('input', (e) => {
         } else {
 			repo.classList.add('hide');
             repo.addEventListener('animationend', () => {
-                repo.style.position = 'absolute'
+                if (searchLowerText != '') {
+                    repo.style.position = 'absolute'
+                } else {
+                    repo.style.position = 'relative'
+                }
             });
         }
     }
@@ -181,4 +186,3 @@ const devicons = {
 	Vue: '<i class="devicon-vuejs-plain colored"></i> Vue',
 	Mail: '<i class="nf nf-cod-mail"></i>',
 };
-
