@@ -29,7 +29,9 @@ function watch() {
 
 function start() {
 	printf '\033[0;32mNpx Server Starting...\033[0m\n'
+  pushd public
 	exec npx serve -d -p 209 #| npx gnomon;
+  popd
 }
 
 function main() {

@@ -442,6 +442,11 @@ a:hover {
     }
 }
 
+.sep {
+    width: 5vh;
+    height: 5vh;
+}
+
 .sblob {
     background-color: white;
     height: 15vmax;

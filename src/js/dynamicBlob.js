@@ -26,9 +26,9 @@ if (blobData) {
 }
 
 if (blobItem == "mouse") {
-    loadScript('/dest/js/mouseblob.js')
+    loadScript('/js/mouseblob.js')
 } else if (blobItem == "random") {
-    loadScript('/dest/js/randomblob.js')
+    loadScript('/js/randomblob.js')
 } else {
     throw new Error("Unknown blob type")
 }
