@@ -1,6 +1,6 @@
 "use strict";
 
-document.body.style.transition = "background 1s ease-in-out";
+aboutPage = document.querySelector(".aboutPage");
 function getRandomColor() {
   var letters = "0123456789ABCDEF";
   var color = "#";
@@ -12,11 +12,11 @@ function getRandomColor() {
 function setRandomGradient() {
   var rand3 = Math.floor(Math.random() * 3) + 1;
   if (rand3 === 1) {
-    document.body.style.background = "linear-gradient(".concat(Math.floor(Math.random() * 180), "deg, ").concat(getRandomColor(), ", ").concat(getRandomColor(), ", ").concat(getRandomColor(), ", ").concat(getRandomColor(), ")");
+    aboutPage.style.background = "linear-gradient(".concat(Math.floor(Math.random() * 180), "deg, ").concat(getRandomColor(), ", ").concat(getRandomColor(), ", ").concat(getRandomColor(), ", ").concat(getRandomColor(), ")");
   } else if (rand3 === 2) {
-    document.body.style.background = "linear-gradient(".concat(Math.floor(Math.random() * 180), "deg, ").concat(getRandomColor(), ", ").concat(getRandomColor(), ", ").concat(getRandomColor(), ", ").concat(getRandomColor(), "),\nlinear-gradient(").concat(Math.floor(Math.random() * 180), "deg, ").concat(getRandomColor(), ", ").concat(getRandomColor(), ", ").concat(getRandomColor(), ", ").concat(getRandomColor(), ")");
+    aboutPage.style.background = "linear-gradient(".concat(Math.floor(Math.random() * 180), "deg, ").concat(getRandomColor(), ", ").concat(getRandomColor(), ", ").concat(getRandomColor(), ", ").concat(getRandomColor(), "),\n    linear-gradient(").concat(Math.floor(Math.random() * 180), "deg, ").concat(getRandomColor(), ", ").concat(getRandomColor(), ", ").concat(getRandomColor(), ", ").concat(getRandomColor(), ")");
   } else {
-    document.body.style.background = "linear-gradient(".concat(Math.floor(Math.random() * 180), "deg, ").concat(getRandomColor(), ", ").concat(getRandomColor(), ", ").concat(getRandomColor(), ", ").concat(getRandomColor(), "),\nlinear-gradient(").concat(Math.floor(Math.random() * 180), "deg, ").concat(getRandomColor(), ", ").concat(getRandomColor(), ", ").concat(getRandomColor(), ", ").concat(getRandomColor(), "),\nlinear-gradient(").concat(Math.floor(Math.random() * 180), "deg, ").concat(getRandomColor(), ", ").concat(getRandomColor(), ", ").concat(getRandomColor(), ", ").concat(getRandomColor(), ")");
+    aboutPage.style.background = "linear-gradient(".concat(Math.floor(Math.random() * 180), "deg, ").concat(getRandomColor(), ", ").concat(getRandomColor(), ", ").concat(getRandomColor(), ", ").concat(getRandomColor(), "),\n    linear-gradient(").concat(Math.floor(Math.random() * 180), "deg, ").concat(getRandomColor(), ", ").concat(getRandomColor(), ", ").concat(getRandomColor(), ", ").concat(getRandomColor(), "),\n    linear-gradient(").concat(Math.floor(Math.random() * 180), "deg, ").concat(getRandomColor(), ", ").concat(getRandomColor(), ", ").concat(getRandomColor(), ", ").concat(getRandomColor(), ")");
   }
 }
 setRandomGradient();

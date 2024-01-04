@@ -24,19 +24,16 @@ function hackType() {
     intervals.push(interval);
   });
 }
-hackType(); // Call hackType initially
-
+hackType();
 setInterval(function () {
   var elements = document.querySelectorAll(".hacktype");
   elements.forEach(function (element) {
     return clearInterval(interval);
-  }); // Clear existing intervals
-  hackType(); // Call hackType again
-}, 10000); // Repeat every 10 seconds
-
-// Check if the document becomes visible again
+  });
+  hackType();
+}, 10000);
 document.addEventListener("visibilitychange", function () {
   if (!document.hidden) {
-    hackType(); // Call hackType when the user comes back from being away
+    hackType();
   }
 });

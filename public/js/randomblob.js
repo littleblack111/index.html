@@ -20,15 +20,12 @@ function randomPosition(element) {
 }
 function main() {
   if (!isFirstTime) {
-    var fadeOutAnimation = blob.animate([
-    // keyframes
-    {
+    var fadeOutAnimation = blob.animate([{
       opacity: .40
     }, {
       opacity: 0,
       scale: .8
     }], {
-      // timing options
       duration: 3000,
       iterations: 1,
       fill: 'forwards'
@@ -36,16 +33,13 @@ function main() {
     fadeOutAnimation.onfinish = function () {
       setRandomBlob();
       randomPosition(blob);
-      blob.animate([
-      // keyframes
-      {
+      blob.animate([{
         opacity: 0,
         scale: .8
       }, {
         opacity: .40,
         scale: 1
       }], {
-        // timing options
         duration: 3000,
         iterations: 1,
         fill: 'forwards'
@@ -54,14 +48,11 @@ function main() {
   } else {
     setRandomBlob();
     randomPosition(blob);
-    blob.animate([
-    // keyframes
-    {
+    blob.animate([{
       opacity: 0
     }, {
       opacity: .40
     }], {
-      // timing options
       duration: 3000,
       iterations: 1,
       fill: 'forwards'
