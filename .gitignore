@@ -1,5 +1,6 @@
 .DS_Store
-dest/**/**
+publc/js/*
+publc/css/*
 node_modules/**
 */output/**
 tmp/**
