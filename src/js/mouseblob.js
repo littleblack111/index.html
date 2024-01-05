@@ -46,7 +46,7 @@ window.onpointermove = event => {
         blob.animate({
             left: `${pageX}px`,
             top: `${pageY}px`
-        }, { duration: 1000, fill: "forwards" });
+        }, { duration: 500, fill: "forwards" });
 
         // Set Default Initial position for blob / fix safari as the animate don't presist(it don't care about fill forwards)
         blob.style.left = `${pageX}px`;

@@ -16,7 +16,7 @@ window.onpointermove = function (event) {
     left: "".concat(pageX, "px"),
     top: "".concat(pageY, "px")
   }, {
-    duration: 1000,
+    duration: 500,
     fill: "forwards"
   });
   blob.style.left = "".concat(pageX, "px");
