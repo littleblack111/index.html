@@ -1,6 +1,6 @@
-/* :root { */
-/*   --primary-color: mediumslateblue; */
-/* } */
+:root {
+    --text: #F4E8C1
+}
 .wrapper {
     height: 100vh;
     width: 100%;
@@ -26,11 +26,11 @@
     height: 100%;
     /* background-color: rgb(20, 53, 85);
     background-image: url(/images/backgroundNightCity.jpg) ,url(/images/backgroundNightCity.webp); */
-    background-color: #05010d;
+    background-color: var(--neon-bg-color);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #F4E8C1;
+    color: var(--text);
     z-index: -10;
 }
 

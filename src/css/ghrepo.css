@@ -21,8 +21,12 @@
     --light-yellow: rgb(255, 255, 204);
     --pale-yellow: rgb(255, 255, 153);
     --lemon-yellow: rgb(255, 250, 205);
-    }
-/* } */
+    --gold-color: #F4E8C1;
+    --box-shadow: rgba(255, 238, 16,.7);
+    --neon-red: #f83a3a;
+    --neon-pink: #f13dd4;
+    --neon-purple: #7000ff;
+}
 
 * {
     box-sizing: border-box;
@@ -37,12 +41,11 @@ span,p,div,a {
 
 body {
     margin: 0;
-    margin-top: (3em);
     font-family: 'Open Sans', sans-serif;
 }
 
 main {
-    margin-top: 3em
+    margin-top: var(--topBarHeight)
 }
 
 .bgWrap {
@@ -55,14 +58,14 @@ main {
     height: 100%;
     /* background-color: rgb(48, 60, 100); */
     /* background-image: url(/images/heigh-grass.jpg), url(/images/heigh-grass.webp); */
-    background-color: #05010d;
+    background-color: var(--neon-bg-color);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
     display: flex;
     justify-content: center;
-    color: #F4E8C1;
+    color: var(--gold-color);
     z-index: -1;
     font-size: 16px;
 }
@@ -178,7 +181,7 @@ ul {
 
 .user-info img:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 100mm rgba(255, 238, 16,.7);
+    box-shadow: 0 0 100mm var(--box-shadow);
 }
 
 .user-info div {
@@ -316,7 +319,7 @@ input:active,
 
 .repo:hover {
     /* box-shadow: 0 3px 6px var(--accent), 0 3px 6px var(--accent); */
-    box-shadow: 0 0 50mm rgba(255, 238, 16,.7);
+    box-shadow: 0 0 50mm var(--box-shadow);
     /* background: rgba(0, 0, 0, 0.1); */
     -webkit-backdrop-filter: blur(125px);
     backdrop-filter: blur(125px);
@@ -389,7 +392,7 @@ input:active,
     -webkit-backdrop-filter: blur(100px);
     backdrop-filter: blur(100px);
     /* box-shadow: 0 0 10mm rgba(0,0,0,.7); */
-    border: 2px solid rgb(255, 255, 255)
+    border: 2px solid #fff
 }
 
 .floattext {
@@ -419,11 +422,11 @@ input:active,
 .btn-code:hover {
     box-shadow: 0 0 50mm linear-gradient(
         45deg,
-        #f83a3a 10%,
-        #f13dd4 50%,
-        #7000ff 90%
+        var(--neon-red) 10%,
+        var(--neon-pink) 50%,
+        var(--neon-purple) 90%
     );
-    border: 2px solid linear-gradient(45deg,#f83a3a 10%,#f13dd4 50%,#7000ff 90%)
+    border: 2px solid linear-gradient(45deg,var(--neon-red) 10%,var(--neon-pink) 50%,var(--neon-purple) 90%)
 }
 
 @media (min-width: 700px) {

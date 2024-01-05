@@ -1,5 +1,6 @@
 :root {
-    --topBarHeight: 10%;
+    --topBarHeight: 3em;
+    --neon-bg-color: #05010d
 }
 
 @font-face {
