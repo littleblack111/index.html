@@ -7,6 +7,24 @@ function loadScript(src) {
   script.src = src;
   document.body.appendChild(script);
 }
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+function generateGradient() {
+  var gradient = 'linear-gradient(to right';
+  var colorCount = Math.floor(Math.random() * 5) + 2;
+  for (var i = 0; i < colorCount; i++) {
+    gradient += ', ' + getRandomColor();
+  }
+  gradient += ')';
+  return gradient;
+}
+blob.style.background = generateGradient();
 var blobItem;
 if (blobData) {
   blobItem = blobData;
