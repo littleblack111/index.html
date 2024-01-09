@@ -463,6 +463,10 @@ a:hover {
     /* color: #F4E8C1; */
 }
 
+a:active {
+    transform: scale(0.9);
+}
+
 .sep {
     width: 5vh;
     height: 5vh;
