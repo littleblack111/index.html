@@ -59,10 +59,11 @@ function main() {
         resetBlob()
         isFirstTime = false;
     }
-    setTimeout(main, getRandomInt(7500, 30000));
+    let mainInterval = setTimeout(main, getRandomInt(7500, 30000));
 }
 
 blob.addEventListener('click', function() {
+    clearTimeout(mainInterval)
     main(getRandomInt(7500, 30000));
 });
 
