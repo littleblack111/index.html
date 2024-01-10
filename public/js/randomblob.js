@@ -21,6 +21,7 @@ function randomPosition(element) {
 }
 function resetBlob() {
   setRandomBlob();
+  blob.style.background = generateGradient();
   randomPosition(blob);
   blob.animate([{
     opacity: 0

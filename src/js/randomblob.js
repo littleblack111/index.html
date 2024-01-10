@@ -23,6 +23,7 @@ function randomPosition(element) {
 
 function resetBlob() {
     setRandomBlob();
+    blob.style.background = generateGradient();
     randomPosition(blob);
     // fadeIn
     blob.animate([
