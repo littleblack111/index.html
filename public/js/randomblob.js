@@ -18,6 +18,19 @@ function randomPosition(element) {
   element.style.left = x + 'px';
   element.style.top = y + 'px';
 }
+function resetBlob() {
+  setRandomBlob();
+  randomPosition(blob);
+  blob.animate([{
+    opacity: 0
+  }, {
+    opacity: .40
+  }], {
+    duration: 3000,
+    iterations: 1,
+    fill: 'forwards'
+  });
+}
 function main() {
   if (!isFirstTime) {
     var fadeOutAnimation = blob.animate([{
@@ -31,34 +44,15 @@ function main() {
       fill: 'forwards'
     });
     fadeOutAnimation.onfinish = function () {
-      setRandomBlob();
-      randomPosition(blob);
-      blob.animate([{
-        opacity: 0,
-        scale: .8
-      }, {
-        opacity: .40,
-        scale: 1
-      }], {
-        duration: 3000,
-        iterations: 1,
-        fill: 'forwards'
-      });
+      resetBlob();
     };
   } else {
-    setRandomBlob();
-    randomPosition(blob);
-    blob.animate([{
-      opacity: 0
-    }, {
-      opacity: .40
-    }], {
-      duration: 3000,
-      iterations: 1,
-      fill: 'forwards'
-    });
+    resetBlob();
     isFirstTime = false;
   }
   setTimeout(main, getRandomInt(7500, 30000));
 }
+blob.addEventListener('click', function () {
+  main(getRandomInt(7500, 30000));
+});
 main();
