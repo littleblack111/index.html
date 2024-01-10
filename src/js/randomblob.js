@@ -1,4 +1,5 @@
 let isFirstTime = true;
+var mainInterval;
 
 function getRandomInt(min, max) {
     min = Math.ceil(min);
@@ -59,7 +60,7 @@ function main() {
         resetBlob()
         isFirstTime = false;
     }
-    let mainInterval = setTimeout(main, getRandomInt(7500, 30000));
+    mainInterval = setTimeout(main, getRandomInt(7500, 30000));
 }
 
 blob.addEventListener('click', function() {
