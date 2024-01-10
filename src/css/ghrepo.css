@@ -377,7 +377,7 @@ input:active,
 .user-info:hover {
     -webkit-backdrop-filter: blur(125px);
     backdrop-filter: blur(125px);
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
 }
 
 .intro {
