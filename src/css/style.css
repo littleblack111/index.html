@@ -1,5 +1,5 @@
 :root {
-    --topBarHeight: 3em;
+    --topBarHeight: 5em;
     --neon-bg-color: #05010d
 }
 
@@ -327,31 +327,37 @@ body::-webkit-scrollbar {
 
 header {
     position: fixed;
-    top: 0;
+    top: 2rem;
     left: 0;
-    width: 100%;
-    height: 3em;
+    width: 75%;
+    margin-left: 12.5%;
+    height: var(--topBarHeight);
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     /* background: color(0, 0, 0, .1); */
     z-index: 1000;
-    background: rgba(0, 0, 0, 0.2);
+    /* background: rgba(0, 0, 0, 0.2); */
+    background-color: #000;
+    border-radius: 32px;
     transition: all 0.3s;
 }
 
 .navBar a {
     position: relative;
     height: 100%;
-    font-size: 5mm;
+    text-align: center;
+    font-size: 2rem;
     text-transform: capitalize;
     text-align: center;
     text-decoration: none;
-    margin-left: 5mm;
-    margin-right: 5mm;
-    padding-top: 3mm;
-    padding-bottom: 3mm;
-    border-radius: 8px;
+    margin-left: 10mm;
+    margin-right: 10mm;
+    padding-top: 5mm;
+    /* padding-bottom: 3mm; */
+    border-radius: 32px;
     color: #F4E8C1;
+    transition: all .3s
 }
 
 .navBar .hleft a {float: left;}
@@ -449,13 +455,16 @@ a:hover {
     text-underline-offset: 1px;
     position: relative;
     height: 100%;
-    font-size: 5mm;
+    /* font-size: 5mm; */
     text-transform: capitalize;
     text-align: center;
+    /* start */
     margin-left: 5mm;
     margin-right: 5mm;
     padding-top: 3mm;
     padding-bottom: 3mm;
+    /* end
+    these lines will make it more appearence and jigully when hovered */
     font-weight: bold;
     -webkit-transition: all .5s;
     transition: all .5s;

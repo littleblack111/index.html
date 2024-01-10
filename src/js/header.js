@@ -1,9 +1,8 @@
 let header = document.querySelector('[header]');
-let newElement = document.createElement('div');
+let mainHeader = document.createElement('div');
 let page = header.getAttribute('page');
 
-// console.log(page);
-newElement.innerHTML = `
+mainHeader.innerHTML = `
 <!-- header -->
 <header id="navBarHeader">
 	<nav class="navBar">
@@ -18,5 +17,5 @@ newElement.innerHTML = `
 </header>
 `;
 
-header.appendChild(newElement);
+header.appendChild(mainHeader);
 document.getElementById("btn"+page).setAttribute('class', 'active');
