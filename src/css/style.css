@@ -384,8 +384,8 @@ header {
 .navBar a:hover {
     /* background: rgba(255, 255, 255, 0.2); */
     /* outline: ridge rgba(128, 128, 128, .6); */
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+    /* -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px); */
     -webkit-transition: all 1s;
     transition: all 1s
 }
@@ -404,22 +404,28 @@ header {
 
 .navBar:active,
 .navBar:hover,
-header:active,
 header:hover,
-#navBarHeader:hover,
-#navBarHeader:active
+#navBarHeader:hover
+/* #navBarHeader:active */
 {
     transform: scale(1.005);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+    /* -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px); */
     transition: all 0.5s
+}
+
+header:active,
+#navBarHeader:active,
+.navBar:active {
+    transform: scale(1.05);
+    /* transition: transform 700ms; */
 }
 
 .navBar,
 header,
 #navBarHeader {
-    -webkit-backdrop-filter: blur(2.5px);
-    backdrop-filter: blur(2.5px);
+    /* -webkit-backdrop-filter: blur(2.5px);
+    backdrop-filter: blur(2.5px); */
     transition: all 0.5s
 }
 
@@ -442,6 +448,11 @@ section {
     overflow-x: hidden;
     perspective: 10px;
 }
+
+/* a {
+    outline: 3px solid currentColor;
+    outline-offset: -6px;
+} */
 
 a:hover {
     font-weight: bold;
