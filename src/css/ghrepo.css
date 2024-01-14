@@ -405,7 +405,8 @@ input:active,
     box-shadow: 0 0 10mm rgba(0,0,0,.7);
     overflow: auto;
     overflow-x: hidden;
-    transition: all 0.3s
+    transition: all 0.3s;
+    break-inside: avoid;
 }
 
 .rdescription {
