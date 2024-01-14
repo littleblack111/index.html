@@ -4,7 +4,7 @@ const resourceToPrecache = [
     '/index.html',
     '/404.html',
     '/css/style.css',
-    // '/css/404.css',
+    '/css/404.css',
     // '/css/index.css',
     // '/css/ghrepos.css',
     // '/css/about.css',
