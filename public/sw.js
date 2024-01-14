@@ -23,10 +23,10 @@ const resourceToPrecache = [
     // '/js/tilt.conf.noglare.js',
     // '/js/tilt.js',
     // '/js/2dtilt.js',
-    '/css/',
-    '/js/',
-    '/pages/',
-    '/fonts/'
+    // '/css/',
+    // '/js/',
+    // '/pages/',
+    // '/fonts/'
 ]
 
 self.addEventListener('install', event => {
