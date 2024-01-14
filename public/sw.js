@@ -23,6 +23,13 @@ const resourceToPrecache = [
     '/js/tilt.conf.noglare.js',
     '/js/tilt.js',
     '/js/2dtilt.js',
+    '/fonts/Hacked-KerX.ttf',
+    '/fonts/SmoothElegantRegular-ZLv3.ttf',
+    '/fonts/LigaJetBrainsMonoNerdFont-Regular.ttf',
+    '/fonts/Big500-8MLOM.ttf',
+    '/fonts/Monoton.ttf',
+    '/fonts/RockSalt-Regular.ttf',
+    '/fonts/audiowide.ttf'
     // '/css/',
     // '/js/',
     // '/pages/',
