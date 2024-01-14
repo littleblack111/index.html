@@ -1,6 +1,10 @@
 .DS_Store
 publc/js/*
 publc/css/*
+publc/js/
+publc/css/
 node_modules/**
+node_modules/
 */output/**
 tmp/**
+tmp/
