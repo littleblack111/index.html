@@ -8,8 +8,10 @@
     "watch:css": "postcss src/css/* --dir public/css --watch",
     "build:js": "babel src/js/* --out-dir public/js",
     "watch:js": "babel src/js/* --out-dir public/js --watch",
-    "build": "yarn build:css & yarn build:js",
-    "watch": "yarn watch:css & yarn watch:js",
+    "build:sw": "babel src/sw.js --out-dir public/",
+    "watch:sw": "babel src/sw.js --out-dir public/ --watch",
+    "build": "yarn build:css & yarn build:js & yarn build:sw",
+    "watch": "yarn watch:css & yarn watch:js & yarn watch:sw",
     "dev": "./launch.sh",
     "check": "./launch.sh check"
   },
