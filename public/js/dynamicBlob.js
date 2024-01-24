@@ -16,15 +16,21 @@ function getRandomColor() {
   return color;
 }
 function generateGradient() {
-  var gradient = 'linear-gradient(to right';
+  var gradient = 'conic-gradient(';
+  var firstTimeInter = true;
   var colorCount = Math.floor(Math.random() * 5) + 2;
   for (var i = 0; i < colorCount; i++) {
-    gradient += ', ' + getRandomColor();
+    if (firstTimeInter === true) {
+      gradient += getRandomColor();
+      firstTimeInter = false;
+    } else {
+      gradient += ', ' + getRandomColor();
+    }
   }
   gradient += ')';
   return gradient;
 }
-blob.style.background = generateGradient();
+blob.style.background = "radial-gradient(circle, lime), ".concat(generateGradient());
 var blobItem;
 if (blobData) {
   blobItem = blobData;
