@@ -1,3 +1,30 @@
 missing doctype --- node_modules/uglify-js/tools/props.html --> <nil>
-target does not exist --- 404.html --> /about
-target does not exist --- 404.html --> /ghrepos
+target does not exist --- public/index.html --> /css/style.css
+target does not exist --- public/index.html --> /css/index.css
+target does not exist --- public/index.html --> /js/main.js
+target does not exist --- public/index.html --> /js/index.js
+target does not exist --- public/index.html --> /js/tilt.js
+target does not exist --- public/index.html --> /js/tilt.conf.noglare.js
+target does not exist --- public/index.html --> /js/dynamicBlob.js
+target does not exist --- public/index.html --> /js/header.js
+target does not exist --- public/index.html --> /js/hacktype.js
+target does not exist --- public/404.html --> /css/404.css
+target does not exist --- public/404.html --> /about
+target is a directory, no index --- public/404.html --> /
+target does not exist --- public/404.html --> /ghrepos
+target does not exist --- public/pages/info/about.html --> /css/style.css
+target does not exist --- public/pages/info/about.html --> /css/about.css
+target does not exist --- public/pages/info/about.html --> /js/main.js
+target does not exist --- public/pages/info/about.html --> /js/about.js
+target does not exist --- public/pages/info/about.html --> /js/header.js
+target does not exist --- public/pages/info/about.html --> /js/dynamicBlob.js
+target does not exist --- public/pages/repo/github/repos.html --> /css/style.css
+target does not exist --- public/pages/repo/github/repos.html --> /css/ghrepo.css
+target does not exist --- public/pages/repo/github/repos.html --> /css/devicon.min.css
+target does not exist --- public/pages/repo/github/repos.html --> /js/getrepo.js
+target does not exist --- public/pages/repo/github/repos.html --> /js/main.js
+target does not exist --- public/pages/repo/github/repos.html --> /js/tilt.js
+target does not exist --- public/pages/repo/github/repos.html --> /js/tilt.conf.noglare.js
+target does not exist --- public/pages/repo/github/repos.html --> /js/header.js
+target does not exist --- public/pages/repo/github/repos.html --> /js/hacktype.js
+target does not exist --- public/pages/repo/github/repos.html --> /js/dynamicBlob.js
