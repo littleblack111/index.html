@@ -525,10 +525,11 @@ a:active {
     top: 50%;
     translate: -50% -50%;
     border-radius: 50%;
-    background: linear-gradient(to right, #00FFFF, mediumpurple);
+    background: conic-gradient(#00FFFF, mediumpurple);
     animation: rotate 20s infinite;
     opacity: 0.8;
     filter: blur(7vmax);
     -webkit-filter: blur(7vmax);
     z-index: -1;
+    
 }
