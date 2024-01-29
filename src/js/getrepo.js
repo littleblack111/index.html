@@ -72,13 +72,13 @@ const displayRepos = (repos) => {
 
 		let listItem = document.createElement('li');
 		listItem.classList.add('repo', 'animate', 'zoomIn')
-		listItem.innerHTML = `
+		listItem.innerHTML = escapeTextReinterpreted(`
 			<h2 class="repo-title">${repo.name}</h2>
-			<span class="rdescription">${repo.description ? `<span class="rdescriptiontext">${repo.description}</span>` : ''}<br/><br/>`
+			<span class="rdescription">${repo.description ? `<span class="rdescriptiontext">${repo.description}</span>` : ''}<br/><br/>`)
 
 		if (repo.stargazers_count > 0) {
-			listItem.innerHTML += `<a href="${starsUrl}">
-			<span>⭐ ${repo.stargazers_count}</span></a>`
+			listItem.innerHTML += escapeTextReinterpreted(`<a href="${starsUrl}">
+			<span>⭐ ${repo.stargazers_count}</span></a>`)
 		}
 
 		if (repo.language) {
@@ -87,8 +87,8 @@ const displayRepos = (repos) => {
 		}
 
 		if (repo.forks_count > 0) {
-			listItem.innerHTML += `<a href="${starsUrl}">
-			<span>${devicons["Git"]} ${repo.forks_count}</span></a>`
+			listItem.innerHTML += escapeTextReinterpreted(`<a href="${starsUrl}">
+			<span>${devicons["Git"]} ${repo.forks_count}</span></a>`)
 		}
 
 		if (repo.homepage && repo.homepage !== "") {
