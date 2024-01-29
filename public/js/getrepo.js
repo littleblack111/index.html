@@ -91,15 +91,15 @@ var displayRepos = function displayRepos(repos) {
       var forksUrl = "".concat(userHome, "/").concat(repo.name, "/network/members");
       var listItem = document.createElement('li');
       listItem.classList.add('repo', 'animate', 'zoomIn');
-      listItem.innerHTML = "\n\t\t\t<h2 class=\"repo-title\">".concat(repo.name, "</h2>\n\t\t\t<span class=\"rdescription\">").concat(repo.description ? "<span class=\"rdescriptiontext\">".concat(repo.description, "</span>") : '', "<br/><br/>");
+      listItem.innerHTML = escapeTextReinterpreted("\n\t\t\t<h2 class=\"repo-title\">".concat(repo.name, "</h2>\n\t\t\t<span class=\"rdescription\">").concat(repo.description ? "<span class=\"rdescriptiontext\">".concat(repo.description, "</span>") : '', "<br/><br/>"));
       if (repo.stargazers_count > 0) {
-        listItem.innerHTML += "<a href=\"".concat(starsUrl, "\">\n\t\t\t<span>\u2B50 ").concat(repo.stargazers_count, "</span></a>");
+        listItem.innerHTML += escapeTextReinterpreted("<a href=\"".concat(starsUrl, "\">\n\t\t\t<span>\u2B50 ").concat(repo.stargazers_count, "</span></a>"));
       }
       if (repo.language) {
         listItem.innerHTML += "<a href=\"".concat(langUrl, "\">\n\t\t\t<span>").concat(devicons[repo.language], "</span></a>");
       }
       if (repo.forks_count > 0) {
-        listItem.innerHTML += "<a href=\"".concat(starsUrl, "\">\n\t\t\t<span>").concat(devicons["Git"], " ").concat(repo.forks_count, "</span></a>");
+        listItem.innerHTML += escapeTextReinterpreted("<a href=\"".concat(starsUrl, "\">\n\t\t\t<span>").concat(devicons["Git"], " ").concat(repo.forks_count, "</span></a>"));
       }
       if (repo.homepage && repo.homepage !== "") {
         listItem.innerHTML += "<br /> <br />\n\t\t\t<a class=\"link-btn btn-code\" href=".concat(repo.html_url, ">Code ").concat(devicons["Github"], "</a>\n\t\t\t<a class=\"link-btn btn-live\" href=").concat(repo.homepage, ">Live ").concat(devicons["Chrome"], "</a> <br />");
