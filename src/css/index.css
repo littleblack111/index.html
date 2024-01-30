@@ -108,6 +108,7 @@
     /* z-index: -1; */
     /* transform: translateZ(30px); */
     font-family: monoton;
+    font-kerning: none;
     font-size: 7vw;
     text-transform: uppercase;
 }
