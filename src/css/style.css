@@ -39,6 +39,11 @@ html {
     font-family: audiowide;
     src: url(/fonts/audiowide.ttf);
 }
+
+@font-face {
+    font-family: inter;
+    src: url(/fonts/Inter.ttf)
+}
 /* page setup ============================================= */
 
 * {
@@ -505,7 +510,7 @@ a:active {
     -webkit-filter: blur(7vmax);
     height: 15vmax;
     left: 50%;
-    opacity: .8;
+    opacity: .4;
     position: absolute;
     top: 50%;
     translate: -50% -50%;
@@ -531,5 +536,4 @@ a:active {
     filter: blur(7vmax);
     -webkit-filter: blur(7vmax);
     z-index: -1;
-    
 }

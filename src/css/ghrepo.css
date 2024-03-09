@@ -11,7 +11,7 @@
 /* @media (prefers-color-scheme: dark) { */
 :root {
     --text: #e5e5e5;
-    --accent: #1688f0;
+    --accent: rgba(22,136,240,0.4);
     --bg-main: #000;
     --bg-repo: #0f0f1a;
     --bg-user: #0a0a0f;
@@ -22,7 +22,7 @@
     --pale-yellow: rgb(255, 255, 153);
     --lemon-yellow: rgb(255, 250, 205);
     --gold-color: #F4E8C1;
-    --box-shadow: rgba(255, 238, 16,.7);
+    --box-shadow: rgba(255, 238, 16,.4);
     --neon-red: #f83a3a;
     --neon-pink: #f13dd4;
     --neon-purple: #7000ff;
@@ -41,7 +41,7 @@ span,p,div,a {
 
 body {
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: inter, 'Open Sans', sans-serif;
 }
 
 main {
@@ -252,6 +252,14 @@ input:active,
     backdrop-filter: blur(200px);
 }
 
+.repo > * {
+    animation-name: scroll;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-timeline: view();
+    font-family: inter;
+}
+
 .repos {
     display: flex;
     flex-wrap: wrap;
@@ -282,6 +290,11 @@ input:active,
     font-weight: bold;
     text-align: center;
     color: var(--accent);
+    font-family: liga;
+}
+
+.rdescriptiontext {
+  font-family: inter;
 }
 
 .repo-list {
@@ -326,13 +339,6 @@ input:active,
     border-radius: 10px;
     transform: scale(1.05);
     transition: background 0.5s, transform 1s, boarder 1.5s, all 0.3s
-}
-
-.repo > * {
-    animation-name: scroll;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
-    animation-timeline: view();
 }
 
 .repo-list:hover:has(li:hover) li:not(:hover,.hide) {

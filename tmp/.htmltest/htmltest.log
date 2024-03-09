@@ -3,8 +3,7 @@ target does not exist --- public/index.html --> /css/style.css
 target does not exist --- public/index.html --> /css/index.css
 target does not exist --- public/index.html --> /js/main.js
 target does not exist --- public/index.html --> /js/index.js
-target does not exist --- public/index.html --> /js/tilt.js
-target does not exist --- public/index.html --> /js/tilt.conf.noglare.js
+target does not exist --- public/index.html --> /js/2dtilt.js
 target does not exist --- public/index.html --> /js/dynamicBlob.js
 target does not exist --- public/index.html --> /js/header.js
 target does not exist --- public/index.html --> /js/hacktype.js
