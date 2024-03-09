@@ -31,7 +31,6 @@ function generateGradient() {
   return gradient;
 }
 blob.style.background = "radial-gradient(circle, lime), ".concat(generateGradient());
-console.log(generateGradient());
 var blobItem;
 if (blobData) {
   blobItem = blobData;
