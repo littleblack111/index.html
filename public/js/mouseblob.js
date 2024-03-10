@@ -9,7 +9,7 @@ window.onpointermove = function (event) {
     left: "".concat(momentumX, "px"),
     top: "".concat(momentumY, "px")
   }, {
-    duration: 1500,
+    duration: 1000,
     fill: "forwards"
   });
   blob.animate({

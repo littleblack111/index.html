@@ -40,7 +40,7 @@ window.onpointermove = event => {
         blob.animate({
             left: `${momentumX}px`,
             top: `${momentumY}px`
-        }, { duration: 1500, fill: "forwards" });
+        }, { duration: 1000, fill: "forwards" });
 
         // Move/Bounce back to initial mouse after momentum
     
