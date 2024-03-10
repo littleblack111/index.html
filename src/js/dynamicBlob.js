@@ -31,9 +31,10 @@ function generateGradient() {
     }
     gradient += ')';
     return gradient;
-}
+};
 
-blob.style.background = `radial-gradient(circle, lime), ${generateGradient()}`;
+// blob.style.background = `radial-gradient(circle, lime), ${generateGradient()}`;
+blob.style.background = generateGradient()
 
 
 if (blobData) {
