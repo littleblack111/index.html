@@ -2,6 +2,7 @@
 
 var blob = document.querySelector('#blob');
 var blobData = blob.dataset.forceForm;
+var blobItem;
 function loadScript(src) {
   var script = document.createElement('script');
   script.src = src;
@@ -31,7 +32,6 @@ function generateGradient() {
   return gradient;
 }
 blob.style.background = "radial-gradient(circle, lime), ".concat(generateGradient());
-var blobItem;
 if (blobData) {
   blobItem = blobData;
 } else {
