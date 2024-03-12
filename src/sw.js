@@ -1,3 +1,8 @@
+caches.keys().then(function(names) {
+    for (let name of names)
+        caches.delete(name);
+});
+
 const cacheName = 'cache-v1'
 const resourceToPrecache = [
     '/',
