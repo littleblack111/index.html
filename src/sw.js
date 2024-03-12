@@ -1,8 +1,3 @@
-caches.keys().then(function(names) {
-    for (let name of names)
-        caches.delete(name);
-});
-
 const cacheName = 'cache-v1'
 const resourceToPrecache = [
     '/',
@@ -42,6 +37,11 @@ const resourceToPrecache = [
     // '/pages/',
     // '/fonts/'
 ]
+
+caches.keys().then(function(names) {
+    for (let name of resourceToPrecache)
+        caches.delete(name);
+});
 
 self.addEventListener('install', event => {
     // console.log("Service Worker: Installed");
