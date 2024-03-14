@@ -205,6 +205,17 @@ body::-webkit-scrollbar {
     }
 }
 
+@keyframes minimize {
+    from {
+        scale: 1;
+        opacity: 1;
+    }
+    to {
+        scale: 0;
+        opacity: 0;
+    }
+}
+
 
 /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 
@@ -331,6 +342,7 @@ body::-webkit-scrollbar {
 /* topbar styles ========================================== */
 
 header {
+    overflow: hidden;
     position: fixed;
     top: 2rem;
     left: 0;
@@ -345,7 +357,7 @@ header {
     /* background: rgba(0, 0, 0, 0.2); */
     background-color: #000;
     border-radius: 32px;
-    transition: all 0.3s;
+    transition: all 0.1s;
 }
 
 .navBar a {
@@ -370,7 +382,7 @@ header {
 
 .navBar a::after {
     content: '';
-    position: absolute;
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -432,6 +444,15 @@ header,
     /* -webkit-backdrop-filter: blur(2.5px);
     backdrop-filter: blur(2.5px); */
     transition: all 0.5s
+}
+
+header.minimizedIsland {
+    opacity: 0;
+    scale: 0;
+    -webkit-animation-name: minimizeIsland;
+    animation-name: minimizeIsland;
+    animation-fill-mode: forwards;
+    transition: all 0.3s
 }
 
 /* other ================================================== */

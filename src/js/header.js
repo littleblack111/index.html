@@ -19,3 +19,8 @@ mainHeader.innerHTML = `
 
 header.appendChild(mainHeader);
 document.getElementById("btn"+page).setAttribute('class', 'active');
+
+window.onscroll = event => {
+let header = document.querySelector('header');
+	header.classList.toggle("minimizedIsland", window.scrollY > 100)
+}
