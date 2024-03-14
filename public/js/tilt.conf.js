@@ -1,8 +1,1 @@
-"use strict";
-
-VanillaTilt.init(document.querySelectorAll(".tilt"), {
-  glare: true,
-  reverse: true,
-  "max-glare": 0.1,
-  reset: false
-});
+"use strict";VanillaTilt.init(document.querySelectorAll(".tilt"),{glare:!0,reverse:!0,"max-glare":.1,reset:!1});
