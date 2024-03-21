@@ -358,6 +358,9 @@ header {
     background-color: #000;
     border-radius: 32px;
     transition: all 0.1s;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 .navBar a {
@@ -374,7 +377,10 @@ header {
     /* padding-bottom: 3mm; */
     border-radius: 32px;
     color: #F4E8C1;
-    transition: all .3s
+    transition: all .3s;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 .navBar .hleft a {float: left;}
