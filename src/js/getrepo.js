@@ -128,6 +128,14 @@ filterInput.addEventListener('input', (e) => {
     }
 });
 
+filterInput.onfocus = event => {
+	filterInput.style.transform = "scale(1.1)"
+}
+
+filterInput.onblur = event => {
+	filterInput.style.transform = ""
+}
+
 // for programming language icons
 const devicons = {
 	Git: '<i class="devicon-git-plain" style="color: #555"></i>',
