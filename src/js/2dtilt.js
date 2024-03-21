@@ -1,5 +1,9 @@
-let target = document.getElementsByClassName("tilt")[0];
-let content = target.getElementsByClassName("content")[0];
+let target = document.querySelectorAll(".tilt")[0];
+try {
+    var tiltFullPageListening = target.dataset.tiltFullPageListening;
+} catch (TypeError) {
+    var tiltFullPageListening = undefined;
+}
 let isMouseOver = false;
 let centerX;
 let centerY;
@@ -26,16 +30,22 @@ function tiltEffect() {
 //check if mobile
 if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i) || window.orientation > 1) {
 } else {
-
     target.addEventListener("mouseleave", () => {
         isMouseOver = false;
         target.style.transform = "";
     });
 
-    document.addEventListener("mousemove", function(event) {
-        mouseX = event.clientX;
-        mouseY = event.clientY;
-    });
+    if (tiltFullPageListening === undefined) {
+        target.addEventListener("mousemove", function(event) {
+            mouseX = event.clientX;
+            mouseY = event.clientY;
+        });
+    } else {
+        document.addEventListener("mousemove", function(event) {
+            mouseX = event.clientX;
+            mouseY = event.clientY;
+        });
+    }
 
     requestAnimationFrame(tiltEffect);
 
