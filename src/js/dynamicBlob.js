@@ -1,5 +1,5 @@
 const blob = document.querySelector('#blob');
-var blobData = blob.dataset.forceForm;
+const blobData = blob.dataset.forceForm;
 var blobItem;
 
 function loadScript(src) {

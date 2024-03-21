@@ -237,7 +237,7 @@ input:hover,
     -webkit-backdrop-filter: blur(64px) saturate(1.6);
     backdrop-filter: blur(64px) saturate(1.6);
     box-shadow: 0 0 50mm rgba(0,0,0,.7);
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: all 0.5s;
 }
 
@@ -464,5 +464,3 @@ input:active,
         width: 30%;
     }
 }
-
-/* TODO: Make all webkit-transition do with normal transition as well */
