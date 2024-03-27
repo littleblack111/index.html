@@ -564,3 +564,17 @@ a:active {
     -webkit-filter: blur(7vmax);
     z-index: -1;
 }
+
+
+html.is-changing .openlink {
+    transition: all 0.5s;
+}
+
+html.is-animating .openlink {
+    /* transform: scale(1000);
+    transition: transform 100s; */
+    transition: all 0.5s;
+    height: 100%;
+    width: 100%;
+    transition-timing-function: ease-out;
+}
