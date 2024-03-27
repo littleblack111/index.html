@@ -18,7 +18,7 @@ mainHeader.innerHTML = `
 `;
 
 header.appendChild(mainHeader);
-document.getElementById("btn"+page).setAttribute('class', 'active');
+document.getElementById("btn"+page).classList.add('active');
 
 window.onscroll = event => {
 let header = document.querySelector('header');
