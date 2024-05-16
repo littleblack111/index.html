@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:html": "find src/html -name '*.html' -type f -print0 | xargs -0 -I {} bash -c 'mkdir -p \"$(dirname \"./public/${1#src/html/}\")\"; html-minifier --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-tag-whitespace --use-short-doctype \"$1\" --output \"./public/${1#src/html/}\"' _ {}",
+    "build:html": "find src/html -name '*.html' -type f -print0 | xargs -0 -I {} bash -c 'mkdir -p \"$(dirname \"./public/${1#src/html/}\")\"; html-minifier-terser --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-tag-whitespace --use-short-doctype \"$1\" --output \"./public/${1#src/html/}\"' _ {}",
     "build:css": "postcss src/css/* --dir public/css",
     "watch:css": "postcss src/css/* --dir public/css --watch",
     "build:js": "babel src/js/* --out-dir public/js",
@@ -27,7 +27,7 @@
     "cssnano": "^6.0.1",
     "doiuse": "^6.0.2",
     "g": "^2.0.1",
-    "html-minifier": "^4.0.0",
+    "html-minifier-terser": "^7.2.0",
     "pixrem": "^5.0.0",
     "postcss": "^8.4.32",
     "postcss-cli": "^10.1.0",
