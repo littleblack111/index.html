@@ -6,7 +6,6 @@ const postcssOpacity = require('postcss-opacity')
 const postcssPseudoelements = require('postcss-pseudoelements')
 const postcssVmin = require('postcss-vmin')
 const pixrem = require('pixrem')
-const doiuse = require('doiuse')
 const postcssFixes = require('postcss-fixes')
 const rucksackCss = require('rucksack-css')
 const postcssImport = require('postcss-import')
@@ -20,7 +19,6 @@ module.exports = {
 		postcssColorRgbaFallback(),
 		postcssPseudoelements(),
 		postcssVmin(),
-		doiuse(),
 		postcssFixes(),
 		rucksackCss(),
 		postcssImport(),

@@ -11,8 +11,8 @@
     "watch:js": "babel src/js/* --out-dir public/js --watch",
     "build:sw": "babel src/sw.js --out-dir public/",
     "watch:sw": "babel src/sw.js --out-dir public/ --watch",
-    "build": "yarn build:html & yarn build:css & yarn build:js & yarn build:sw",
-    "watch": "yarn watch:css & yarn watch:js & yarn watch:sw",
+    "build": "bun build:html & bun build:css & bun build:js & bun build:sw",
+    "watch": "bun watch:css & bun watch:js & bun watch:sw",
     "dev": "./launch.sh",
     "check": "./launch.sh check"
   },
@@ -25,7 +25,6 @@
     "@babel/preset-env": "^7.23.2",
     "autoprefixer": "^10.4.16",
     "cssnano": "^6.0.1",
-    "doiuse": "^6.0.2",
     "g": "^2.0.1",
     "html-minifier-terser": "^7.2.0",
     "pixrem": "^5.0.0",
