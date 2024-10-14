@@ -346,26 +346,29 @@ header {
     position: fixed;
     top: 2rem;
     left: 0;
-    /* width: 75%; */
-    /* width: 100%; */
-    /* max-width: fit-content; */
-    /* margin-left: 12.5%; */
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%; /* Adjust width as needed */
     height: var(--topBarHeight);
-    /* justify-content: fit-content; */
     align-items: center;
     text-align: center;
-    /* background: color(0, 0, 0, .1); */
     z-index: 1000;
-    /* background: rgba(0, 0, 0, 0.2); */
     background-color: #000;
     border-radius: 32px;
-    transition: all 0.1s;
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
 }
 
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .navBar a {
+	font-family: var(--font-jetbrains);
     position: relative;
     height: 100%;
     text-align: center;
@@ -376,22 +379,28 @@ header {
     text-decoration: none;
     margin-left: 10mm;
     margin-right: 10mm;
-    padding-top: 5mm;
+    padding-top: 4mm;
     /* padding-bottom: 3mm; */
     border-radius: 32px;
     color: #F4E8C1;
     transition: all .3s;
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
 }
 
 .navBar .hleft a {float: left;}
 .navBar .hright a {float: right;}
 
+.hleft, .hright {
+    display: flex;
+}
+
+.hright {
+    gap: 1rem; /* Adjust the gap between links as needed */
+}
+
 .navBar a::after {
     content: '';
-    position: fixed;
+    position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -399,20 +408,15 @@ header {
     background: rgba(128, 128, 128, 0.2);
     border-radius: 1mm;
     transform: scaleX(0);
-    -webkit-transition: all 0.3s;
     transition: all 0.3s;
 }
 
 .navBar a:hover::after {
-    transform: scaleX(1.1);
+	position: absolute;
+    transform: scaleX(1);
 }
 
 .navBar a:hover {
-    /* background: rgba(255, 255, 255, 0.2); */
-    /* outline: ridge rgba(128, 128, 128, .6); */
-    /* -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px); */
-    -webkit-transition: all 1s;
     transition: all 1s
 }
 
@@ -432,18 +436,15 @@ header {
 .navBar:hover,
 header:hover,
 #navBarHeader:hover
-/* #navBarHeader:active */
 {
     transform: scale(1.005);
-    /* -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px); */
     transition: all 0.5s
 }
 
 header:active,
 #navBarHeader:active,
 .navBar:active {
-    transform: scale(1.05);
+    transform: scale(1.01)
     /* transition: transform 700ms; */
 }
 
@@ -458,10 +459,9 @@ header,
 header.minimizedIsland {
     opacity: 0;
     scale: 0;
-    -webkit-animation-name: minimizeIsland;
-    animation-name: minimizeIsland;
+	transform: translateY(-100%);
     animation-fill-mode: forwards;
-    transition: all 0.3s
+    transition: all 3s
 }
 
 /* other ================================================== */
