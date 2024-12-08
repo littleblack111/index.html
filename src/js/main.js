@@ -1,6 +1,14 @@
+import posthog from 'posthog-js'
+
+posthog.init('phc_GlIesGygABKO6OWVgPQBt23VU1qbZsrX9RfdgEbIU2d',
+    {
+        api_host: 'https://us.i.posthog.com',
+        person_profiles: 'identified_only' // or 'always' to create profiles for anonymous users as well
+    }
+)
+
 if ('serviceWorker' in navigator) {
-    window.addEventListener ('load', () => {
-        navigator.serviceWorker.register('/sw.js')
+    window.addEventListener ('load', () => { navigator.serviceWorker.register('/sw.js')
             .then (reg => {
                 // console.log('sw.js Registered', reg);
             }).catch(err => {
