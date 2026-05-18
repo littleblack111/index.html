@@ -11,3 +11,7 @@ tmp/
 tmp/*
 yarn.lock
 public/images/*
+/public/css
+/public/js
+/public/pages
+/node_modules

@@ -1,1 +1,0 @@
-VanillaTilt.init(document.querySelectorAll(".tilt"),{glare:!0,reverse:!0,"max-glare":.1,reset:!1});
